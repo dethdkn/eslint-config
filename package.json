@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "funding": "https://github.com/sponsors/dethdkn",
-  "homepage": "https://rosa.dev.br/eslint",
+  "homepage": "https://rosa.dev.br/blog/eslint",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dethdkn/eslint-config.git"
@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc && eslint .",
-    "inspector": "pnpx @eslint/config-inspector@latest",
+    "inspector": "tsc && pnpx @eslint/config-inspector@latest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

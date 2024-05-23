@@ -1,72 +1,48 @@
-import tsParser from '@typescript-eslint/parser'
-import stylistic from '@stylistic/eslint-plugin'
+import tsParser from './parsers/typescript.js'
+import vueParser from './parsers/vue.js'
+import ignores from './rules/ignores.js'
+import stylistic from './rules/stylistic.js'
+import antfu from './rules/antfu.js'
+import javascript from './rules/javascript.js'
 
-export default function(opts: { typescript: boolean, tailwind: string, vue: boolean, nuxt: boolean }) {
-  const lint:{}[] = [{ ignores: ["dist/**", ".nuxt/**"] }]
+export default function(opts?: { typescript?: boolean, tailwind?: boolean, vue?: boolean, nuxt?: boolean }){
+  const typescript = opts?.typescript === false ? false : true
+  const tailwind = opts?.tailwind === false ? false : true
+  const vue = opts?.vue === false ? false : true
+  const nuxt = opts?.nuxt === false ? false : true
 
-  // ! @stylistic/eslint-plugin
-  lint.push( {
-    files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.ts", "**/*.cts", "**/*.mts"],
-    languageOptions: { parser: tsParser },
-    plugins: { '@stylistic': stylistic },
-    rules: {
-      "@stylistic/array-bracket-newline": ['error', 'consistent'],
-      "@stylistic/array-bracket-spacing": ['error', 'never'],
-      "@stylistic/array-element-newline": ['error', 'consistent'],
-      "@stylistic/arrow-parens": ['error', 'as-needed'],
-      "@stylistic/arrow-spacing": ['error', { before: true, after: true }],
-      "@stylistic/block-spacing": ['error', 'always'],
-      "@stylistic/brace-style": ['error', 'stroustrup', { "allowSingleLine": true }],
-      "@stylistic/comma-dangle": ['error', 'always-multiline'],
-      "@stylistic/comma-spacing": ['error', { "before": false, "after": true }],
-      "@stylistic/comma-style": ['error', "last"],
-      "@stylistic/computed-property-spacing": ['error', "never", { "enforceForClassMembers": true }],
-      "@stylistic/dot-location": ['error', "object"],
-      "@stylistic/eol-last": ['error', "always"],
-      "@stylistic/function-call-argument-newline": ['error', "never"],
-      "@stylistic/function-call-spacing": ['error', "never"],
-      "@stylistic/function-paren-newline": ['error', "never"],
-      "@stylistic/generator-star-spacing": ['error', "before"],
-      "@stylistic/implicit-arrow-linebreak": ['error', "beside"],
-      "@stylistic/indent": ['error', 2],
-      "@stylistic/indent-binary-ops": ['error', 2],
-      "@stylistic/key-spacing": ['error', { afterColon: true, beforeColon: false }],
-      "@stylistic/keyword-spacing": ['error', { "overrides": { "if": { "after": false }, "for": { "after": false }, "while": { "after": false } } }],
-      "@stylistic/lines-between-class-members": ['error', "always"],
-      "@stylistic/max-statements-per-line": ['error', { "max": 1 }],
-      "@stylistic/member-delimiter-style": ['error', { "multiline": { "delimiter": "comma", "requireLast": true }, "singleline": { "delimiter": "comma", "requireLast": false }, "multilineDetection": "brackets" }],
-      "@stylistic/multiline-ternary": ['error', 'always-multiline'],
-      "@stylistic/new-parens": ['error', 'always'],
-      "@stylistic/no-extra-parens": ['error', 'functions'],
-      "@stylistic/no-floating-decimal": ['error'],
-      "@stylistic/no-mixed-operators": ['error', { allowSamePrecedence: true, groups: [['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']] }],
-      "@stylistic/no-mixed-spaces-and-tabs": ['error'],
-      "@stylistic/no-multi-spaces": ['error'],
-      "@stylistic/no-tabs": ['error'],
-      "@stylistic/no-trailing-spaces": ['error'],
-      "@stylistic/no-whitespace-before-property": ['error'],
-      "@stylistic/nonblock-statement-body-position": ['error', 'beside'],
-      "@stylistic/object-curly-spacing": ['error', 'always'],
-      "@stylistic/operator-linebreak": ['error', 'none'],
-      "@stylistic/semi": ['error', 'never'],
-    },
-  })
+  const lint: {}[] = []
 
+  lint.push(ignores)
+  lint.push(tsParser)
+  lint.push(vueParser)
+  lint.push(stylistic)
+  lint.push(antfu)
+  lint.push(javascript(nuxt))
 
   return lint
 }
 
-if(true){
-  console.log(1)
-}
+const i = true
+
+if(true === i) console.log(1)
 else { console.log(2) }
 
+const a = [{ 1: 0.2 }, [3 + 3, 4 + 4, 5]]
 
-const a = [{ 1: 0.2 },
-  [3,
-    4,
+const b = { a: 2, d: 5, p: 4, o: 3, t: 6 }
 
+function h(){
+  console.log('hello')
+}
 
+function zz(x: Function){
+  x()
+  console.log('zz')
+}
 
+zz((d: any) => d)
 
-    5]]
+zz(function ggg(d: number){
+  return d
+})

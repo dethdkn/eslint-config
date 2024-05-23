@@ -1,0 +1,5 @@
+.DS_Store
+src/
+test/
+eslint.config.mjs
+tsconfig.json

@@ -1,0 +1,72 @@
+{
+  "name": "@dethdkn/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.1.2",
+  "description": "Simple Ldap Client",
+  "author": {
+    "name": "Gabriel 'DethDKN' Rosa",
+    "email": "gabriel@rosa.dev.br",
+    "url": "https://rosa.dev.br"
+  },
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/dethdkn",
+  "homepage": "https://rosa.dev.br/eslint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dethdkn/eslint-config.git"
+  },
+  "bugs": "https://github.com/dethdkn/eslint-config/issues",
+  "keywords": [
+    "ldap"
+  ],
+  "main": "dist/main.js",
+  "types": "types/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && eslint .",
+    "inspector": "pnpx @eslint/config-inspector@latest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "eslint": "9.3.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.3.0",
+    "@nuxt/eslint-plugin": "0.3.13",
+    "@rushstack/eslint-patch": "^1.10.3",
+    "@stylistic/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "eslint-config-flat-gitignore": "^0.1.5",
+    "eslint-flat-config-utils": "^0.2.5",
+    "eslint-merge-processors": "^0.1.0",
+    "eslint-plugin-antfu": "^2.2.0",
+    "eslint-plugin-command": "^0.2.3",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import-x": "^0.5.0",
+    "eslint-plugin-jsdoc": "^48.2.5",
+    "eslint-plugin-jsonc": "^2.15.1",
+    "eslint-plugin-markdown": "^5.0.0",
+    "eslint-plugin-n": "^17.7.0",
+    "eslint-plugin-no-only-tests": "^3.1.0",
+    "eslint-plugin-perfectionist": "^2.10.0",
+    "eslint-plugin-regexp": "^2.6.0",
+    "eslint-plugin-tailwindcss": "^3.16.0",
+    "eslint-plugin-toml": "^0.11.0",
+    "eslint-plugin-unicorn": "^53.0.0",
+    "eslint-plugin-unused-imports": "^3.2.0",
+    "eslint-plugin-vitest": "^0.5.4",
+    "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-yml": "^1.14.0",
+    "eslint-processor-vue-blocks": "^0.1.2",
+    "jsonc-eslint-parser": "^2.4.0",
+    "parse-gitignore": "^2.0.0",
+    "toml-eslint-parser": "^0.9.3",
+    "vue-eslint-parser": "^9.4.2",
+    "yaml-eslint-parser": "^1.2.2"
+  }
+}

@@ -11,14 +11,17 @@
   },
   "license": "MIT",
   "funding": "https://github.com/sponsors/dethdkn",
-  "homepage": "https://rosa.dev.br/blog/eslint",
+  "homepage": "https://github.com/dethdkn/eslint-config",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dethdkn/eslint-config.git"
   },
   "bugs": "https://github.com/dethdkn/eslint-config/issues",
   "keywords": [
-    "ldap"
+    "eslint",
+    "javascript",
+    "typescript",
+    "nuxt"
   ],
   "main": "dist/main.js",
   "types": "types/main.d.ts",
@@ -32,7 +35,8 @@
   "devDependencies": {
     "@types/node": "^20.12.12",
     "eslint": "9.3.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vue": "^3.4.27"
   },
   "dependencies": {
     "@eslint/js": "^9.3.0",

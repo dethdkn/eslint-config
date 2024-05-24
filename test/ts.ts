@@ -1,6 +1,6 @@
 const i = true
 
-if(true === i) console.log(1)
+if(i === true) console.log(1)
 else { console.log(2) }
 
 const a = [{ 1: 0.2 }, [3 + 3, 4 + 4, 5]]
@@ -13,11 +13,10 @@ function h(){
 
 function zz(x: Function){
   x()
+  // eslint-disable-next-line
   console.log('zz')
 }
 
 zz((d: any) => d)
 
-zz(function ggg(d: number){
-  return d
-})
+zz((d: number) => d)

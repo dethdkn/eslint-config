@@ -4,8 +4,10 @@ import ignores from './rules/ignores.js'
 import stylistic from './rules/stylistic.js'
 import antfu from './rules/antfu.js'
 import javascript from './rules/javascript.js'
+import unusedImports from './rules/unused-imports.js'
+import eslintComments from './rules/eslint-comments.js'
 
-export default function(opts?: { typescript?: boolean, tailwind?: boolean, vue?: boolean, nuxt?: boolean }){
+export default (opts?: { typescript?: boolean, tailwind?: boolean, vue?: boolean, nuxt?: boolean }) => {
   const typescript = opts?.typescript !== false
   const tailwind = opts?.tailwind !== false
   const vue = opts?.vue !== false
@@ -19,6 +21,8 @@ export default function(opts?: { typescript?: boolean, tailwind?: boolean, vue?:
   lint.push(stylistic)
   lint.push(antfu)
   lint.push(javascript(nuxt))
+  lint.push(unusedImports)
+  lint.push(eslintComments)
 
   return lint
 }

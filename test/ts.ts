@@ -20,3 +20,7 @@ function zz(x: Function){
 zz((d: any) => d)
 
 zz((d: number) => d)
+
+import { writeFile } from 'fs/promises'
+
+writeFile()

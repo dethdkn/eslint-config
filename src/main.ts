@@ -12,6 +12,7 @@ import node from './rules/node.js'
 import perfectionist from './rules/perfectionist.js'
 import regexp from './rules/regexp.js'
 import stylistic from './rules/stylistic.js'
+import tailwindcss from './rules/tailwind.js'
 import typescript from './rules/typescript.js'
 import unicorn from './rules/unicorn.js'
 import unusedImports from './rules/unused-imports.js'
@@ -23,6 +24,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean }) => {
   const lint: unknown[] = []
 
   lint.push(ignores, tsParser, jsonParser, vueParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(nuxt), ...json)
+  if(tailwind) lint.push(tailwindcss)
 
   return lint
 }

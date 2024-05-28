@@ -10,6 +10,7 @@ import node from './rules/node.js'
 import jsdoc from './rules/jsdoc.js'
 import importx from './rules/importx.js'
 import unicorn from './rules/unicorn.js'
+import perfectionist from './rules/perfectionist.js'
 
 export default (opts?: { tailwind?: boolean, nuxt?: boolean }) => {
   const tailwind = opts?.tailwind !== false
@@ -29,6 +30,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean }) => {
   lint.push(jsdoc)
   lint.push(importx)
   lint.push(unicorn)
+  lint.push(perfectionist)
 
   return lint
 }

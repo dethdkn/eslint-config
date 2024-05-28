@@ -1,4 +1,5 @@
-import { writeFile } from 'fs/promises'
+import { chown, writeFile } from 'node:fs/promises'
+import { Buffer } from 'node:buffer'
 
 const i = true
 
@@ -24,3 +25,7 @@ zz((d: any) => d)
 zz((d: number) => d)
 
 writeFile()
+
+chown()
+
+Buffer()

@@ -3,3 +3,4 @@ src/
 test/
 eslint.config.mjs
 tsconfig.json
+.eslint-config-inspector

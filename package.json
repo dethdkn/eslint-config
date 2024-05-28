@@ -28,11 +28,13 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc && eslint .",
-    "inspector": "tsc && pnpx @eslint/config-inspector@latest",
+    "inspector": "tsc && eslint --inspect-config",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:build": "pnpx @eslint/config-inspector build"
   },
   "devDependencies": {
+    "@eslint/config-inspector": "^0.4.8",
     "@types/node": "^20.12.12",
     "eslint": "9.3.0",
     "typescript": "^5.4.5",

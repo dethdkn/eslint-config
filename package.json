@@ -31,7 +31,7 @@
     "inspector": "tsc && eslint --inspect-config",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "lint:build": "pnpx @eslint/config-inspector build"
+    "lint:build": "tsc && npx @eslint/config-inspector build"
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.4.8",

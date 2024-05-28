@@ -1,4 +1,4 @@
-export default (nuxt: boolean) => ({
+export default {
   name: 'dethdkn/javascript',
   rules: {
     // Possible Problems
@@ -30,7 +30,6 @@ export default (nuxt: boolean) => ({
     'no-import-assign': ['error'],
     'no-inner-declarations': ['error', 'both'],
     'no-irregular-whitespace': ['error'],
-    'no-loss-of-precision': ['error'],
     'no-misleading-character-class': ['error'],
     'no-new-native-nonconstructor': ['error'],
     'no-obj-calls': ['error'],
@@ -49,7 +48,6 @@ export default (nuxt: boolean) => ({
     'no-unsafe-finally': ['error'],
     'no-unsafe-negation': ['error'],
     'no-unused-private-class-members': ['error'],
-    'no-use-before-define': [nuxt ? 'off' : 'error', { classes: false, functions: false, variables: true }],
     'use-isnan': ['error'],
     'valid-typeof': ['error'],
     // Suggestions
@@ -58,7 +56,6 @@ export default (nuxt: boolean) => ({
     'block-scoped-var': ['error'],
     'default-case': ['error'],
     'default-case-last': ['error'],
-    'default-param-last': ['error'],
     'dot-notation': ['error'],
     'eqeqeq': ['error'],
     'func-style': ['error', 'declaration'],
@@ -98,7 +95,6 @@ export default (nuxt: boolean) => ({
     'no-useless-catch': ['error'],
     'no-useless-computed-key': ['error'],
     'no-useless-concat': ['error'],
-    'no-useless-constructor': ['error'],
     'no-useless-escape': ['error'],
     'no-useless-rename': ['error'],
     'no-useless-return': ['error'],
@@ -109,7 +105,7 @@ export default (nuxt: boolean) => ({
     'operator-assignment': ['error'],
     'prefer-arrow-callback': ['error'],
     'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
-    'prefer-destructuring': ['error'],
+    'prefer-destructuring': ['warn'],
     'prefer-exponentiation-operator': ['error'],
     'prefer-object-spread': ['error'],
     'prefer-promise-reject-errors': ['error'],
@@ -118,7 +114,6 @@ export default (nuxt: boolean) => ({
     'prefer-spread': ['error'],
     'prefer-template': ['error'],
     'radix': ['error', 'as-needed'],
-    'require-await': ['error'],
     'sort-imports': ['error', { allowSeparatedGroups: false, ignoreCase: false, ignoreDeclarationSort: true, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'] }],
     'symbol-description': ['error'],
     'yoda': ['error', 'never'],
@@ -1296,4 +1291,4 @@ export default (nuxt: boolean) => ({
     sourceType: 'module',
   },
   linterOptions: { reportUnusedDisableDirectives: true },
-})
+}

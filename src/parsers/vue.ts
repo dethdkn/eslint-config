@@ -1,3 +1,4 @@
+import tsparser from '@typescript-eslint/parser'
 import parser from 'vue-eslint-parser'
 
 export default {
@@ -7,12 +8,8 @@ export default {
     parser,
     parserOptions: {
       extraFileExtensions: ['.vue'],
+      parser: tsparser,
       sourceType: 'module',
-      ecmaFeatures: { jsx: true },
-      parser: {
-        version: '7.9.0',
-        meta: { name: 'typescript-eslint/parser', version: '7.9.0' },
-      },
     },
   },
 }

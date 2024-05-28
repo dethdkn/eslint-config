@@ -1,5 +1,9 @@
 <script setup lang='ts'>
+function a(){
+  console.log('a')
+}
 
+a()
 </script>
 
 <template>

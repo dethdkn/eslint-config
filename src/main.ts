@@ -7,11 +7,12 @@ import javascript from './rules/javascript.js'
 import unusedImports from './rules/unused-imports.js'
 import eslintComments from './rules/eslint-comments.js'
 import node from './rules/node.js'
+import jsdoc from './rules/jsdoc.js'
+import importx from './rules/importx.js'
+import unicorn from './rules/unicorn.js'
 
-export default (opts?: { typescript?: boolean, tailwind?: boolean, vue?: boolean, nuxt?: boolean }) => {
-  const typescript = opts?.typescript !== false
+export default (opts?: { tailwind?: boolean, nuxt?: boolean }) => {
   const tailwind = opts?.tailwind !== false
-  const vue = opts?.vue !== false
   const nuxt = opts?.nuxt !== false
 
   const lint: {}[] = []
@@ -25,6 +26,9 @@ export default (opts?: { typescript?: boolean, tailwind?: boolean, vue?: boolean
   lint.push(unusedImports)
   lint.push(eslintComments)
   lint.push(node)
+  lint.push(jsdoc)
+  lint.push(importx)
+  lint.push(unicorn)
 
   return lint
 }

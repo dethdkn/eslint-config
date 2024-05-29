@@ -19,6 +19,7 @@ import tailwind from './rules/tailwind.js'
 import typescript from './rules/typescript.js'
 import unicorn from './rules/unicorn.js'
 import unusedImports from './rules/unused-imports.js'
+import vitest from './rules/vitest.js'
 import vue from './rules/vue.js'
 
 export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) => {
@@ -28,7 +29,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) =
 
   const lint: unknown[] = []
 
-  lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), ...json, vue(hasTailwind, hasNuxt, hasI18n))
+  lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), vitest, ...json, vue(hasTailwind, hasNuxt, hasI18n))
 
   if(hasTailwind) lint.push(tailwind)
   if(hasNuxt) lint.push(nuxt)

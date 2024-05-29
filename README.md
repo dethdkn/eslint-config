@@ -35,10 +35,6 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Unused Imports
   </a>
-- <a href="https://github.com/sweepline/eslint-plugin-unused-imports" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        Unused Imports
-  </a>
 - <a href="https://mysticatea.github.io/eslint-plugin-eslint-comments" target="_blank">
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Eslint Comments

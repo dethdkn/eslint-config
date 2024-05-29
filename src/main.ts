@@ -16,6 +16,7 @@ import perfectionist from './rules/perfectionist.js'
 import regexp from './rules/regexp.js'
 import stylistic from './rules/stylistic.js'
 import tailwind from './rules/tailwind.js'
+import toml from './rules/toml.js'
 import typescript from './rules/typescript.js'
 import unicorn from './rules/unicorn.js'
 import unusedImports from './rules/unused-imports.js'
@@ -36,7 +37,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) =
   if(hasTailwind) lint.push(tailwind)
   if(hasNuxt) lint.push(nuxt)
 
-  lint.push(yaml)
+  lint.push(yaml, toml)
 
   return lint
 }

@@ -17,7 +17,16 @@
     "url": "git+https://github.com/dethdkn/eslint-config.git"
   },
   "bugs": "https://github.com/dethdkn/eslint-config/issues",
-  "keywords": ["eslint", "javascript", "typescript", "nuxt"],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "typescript",
+    "nuxt",
+    "tailwindcss",
+    "vue",
+    "json"
+  ],
   "main": "dist/main.js",
   "types": "types/main.d.ts",
   "scripts": {
@@ -41,7 +50,6 @@
     "eslint-plugin-import-x": "^0.5.1",
     "eslint-plugin-jsdoc": "^48.2.7",
     "eslint-plugin-jsonc": "^2.16.0",
-    "eslint-plugin-markdown": "^5.0.0",
     "eslint-plugin-n": "^17.7.0",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-perfectionist": "^2.10.0",

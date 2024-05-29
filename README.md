@@ -96,10 +96,9 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
         Toml
   </a>
 - And more...
-
-<a href="https://eslint.rosa.dev.br">
-    <h3 align="center">Click here to check all enabled rules</h3>
-</a>
+<h3 align="center">
+  <a href="https://eslint.rosa.dev.br">Click here to check all enabled rules</a>
+</h3>
 
 ## 🚀 Setup
 

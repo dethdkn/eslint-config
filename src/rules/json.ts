@@ -2,8 +2,7 @@ import json from 'eslint-plugin-jsonc'
 
 export default [
   {
-    name: 'dethdkn/json',
-    files: ['**/*.json', '**/*.jsonc', '**/*.json5'],
+    name: 'dethdkn/json/rules',
     plugins: { json },
     rules: {
     // jsonc rules
@@ -44,7 +43,7 @@ export default [
     },
   },
   {
-    name: 'dethdkn/json/sort-package-json',
+    name: 'dethdkn/json/sort-package-json/rules',
     files: ['**/package.json'],
     rules: {
       'json/sort-array-values': ['error', { order: { type: 'asc' }, pathPattern: '^files$' }],
@@ -117,7 +116,7 @@ export default [
     },
   },
   {
-    name: 'dethdkn/json/sort-tsconfig-json',
+    name: 'dethdkn/json/sort-tsconfig-json/rules',
     files: ['**/tsconfig.json', '**/tsconfig.*.json'],
     rules: {
       'json/sort-keys': ['error', {

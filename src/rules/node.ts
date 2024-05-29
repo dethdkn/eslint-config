@@ -1,7 +1,7 @@
 import node from 'eslint-plugin-n'
 
 export default {
-  name: 'dethdkn/node',
+  name: 'dethdkn/node/rules',
   plugins: { node },
   rules: {
     'node/global-require': ['error'],

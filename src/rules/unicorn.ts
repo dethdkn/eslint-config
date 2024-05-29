@@ -1,7 +1,7 @@
 import unicorn from 'eslint-plugin-unicorn'
 
 export default {
-  name: 'dethdkn/unicorn',
+  name: 'dethdkn/unicorn/rules',
   plugins: { unicorn },
   rules: {
     'unicorn/catch-error-name': ['error'],

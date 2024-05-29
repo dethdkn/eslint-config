@@ -1,7 +1,7 @@
 import regexp from 'eslint-plugin-regexp'
 
 export default {
-  name: 'dethdkn/regexp',
+  name: 'dethdkn/regexp/rules',
   plugins: { regexp },
   rules: {
     'regexp/confusing-quantifier': ['warn'],

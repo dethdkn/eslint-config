@@ -1,7 +1,7 @@
 import tailwind from 'eslint-plugin-tailwindcss'
 
 export default {
-  name: 'dethdkn/tailwind',
+  name: 'dethdkn/tailwind/rules',
   plugins: { tailwind },
   rules: {
     'tailwind/classnames-order': ['warn'],

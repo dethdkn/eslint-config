@@ -1,6 +1,8 @@
 import jsonParser from './parsers/json.js'
+import tomlParser from './parsers/toml.js'
 import tsParser from './parsers/typescript.js'
 import vueParser from './parsers/vue.js'
+import yamlParser from './parsers/yaml.js'
 import antfu from './rules/antfu.js'
 import eslintComments from './rules/eslint-comments.js'
 import ignores from './rules/ignores.js'
@@ -25,7 +27,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean }) => {
 
   const lint: unknown[] = []
 
-  lint.push(ignores, tsParser, jsonParser, vueParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), ...json, vue(hasTailwind, hasNuxt))
+  lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), ...json, vue(hasTailwind, hasNuxt))
 
   if(hasTailwind) lint.push(tailwind)
   if(hasNuxt) lint.push(nuxt)

@@ -1,7 +1,7 @@
 import eslintComments from 'eslint-plugin-eslint-comments'
 
 export default {
-  name: 'dethdkn/eslint-comments',
+  name: 'dethdkn/eslint-comments/rules',
   plugins: { 'eslint-comments': eslintComments },
   rules: {
     'eslint-comments/no-aggregating-enable': ['error'],

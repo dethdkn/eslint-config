@@ -1,7 +1,7 @@
 import stylistic from '@stylistic/eslint-plugin'
 
 export default {
-  name: 'dethdkn/stylistic',
+  name: 'dethdkn/stylistic/rules',
   plugins: { '@stylistic': stylistic },
   rules: {
     '@stylistic/array-bracket-newline': ['error', 'consistent'],

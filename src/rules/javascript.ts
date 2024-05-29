@@ -1,5 +1,5 @@
 export default {
-  name: 'dethdkn/javascript',
+  name: 'dethdkn/javascript/rules',
   rules: {
     // Possible Problems
     'array-callback-return': ['error'],

@@ -1,7 +1,7 @@
 import * as importx from 'eslint-plugin-import-x'
 
 export default {
-  name: 'dethdkn/importx',
+  name: 'dethdkn/importx/rules',
   plugins: { importx },
   rules: {
     'importx/first': ['error'],

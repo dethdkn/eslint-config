@@ -1,7 +1,7 @@
 import antfu from 'eslint-plugin-antfu'
 
 export default {
-  name: 'dethdkn/antfu',
+  name: 'dethdkn/antfu/rules',
   plugins: { antfu },
   rules: {
     'antfu/consistent-list-newline': ['error'],

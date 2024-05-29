@@ -1,7 +1,7 @@
 import typescript from '@typescript-eslint/eslint-plugin'
 
 export default (nuxt: boolean) => ({
-  name: 'dethdkn/typescript',
+  name: 'dethdkn/typescript/rules',
   plugins: { typescript },
   rules: {
     'typescript/array-type': ['error'],

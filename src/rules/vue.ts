@@ -1,9 +1,9 @@
 import vue from 'eslint-plugin-vue'
 
 export default (tailwind: boolean, nuxt: boolean) => ({
-  name: 'dethdkn/vue',
+  name: 'dethdkn/vue/rules',
   plugins: { vue },
   rules: {
-    'vue/consistent-list-newline': ['error'],
+    'vue/comment-directive': ['error'],
   },
 })

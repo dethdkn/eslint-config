@@ -17,12 +17,7 @@
     "url": "git+https://github.com/dethdkn/eslint-config.git"
   },
   "bugs": "https://github.com/dethdkn/eslint-config/issues",
-  "keywords": [
-    "eslint",
-    "javascript",
-    "typescript",
-    "nuxt"
-  ],
+  "keywords": ["eslint", "javascript", "typescript", "nuxt"],
   "main": "dist/main.js",
   "types": "types/main.d.ts",
   "scripts": {

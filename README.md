@@ -1,6 +1,4 @@
-<a href="https://eslint.rosa.dev.br">
-    <h1 align="center">@dethdkn/eslint-config</h1>
-</a>
+<h1 align="center">@dethdkn/eslint-config</h1>
 <p align="center">🧹 My Opinionated ESLint Config</p>
 
 <p align="center">

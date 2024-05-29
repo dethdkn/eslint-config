@@ -1,7 +1,9 @@
 import typescript from '@typescript-eslint/eslint-plugin'
+import type { Linter } from 'eslint'
 
-export default (nuxt: boolean) => ({
+export default (nuxt: boolean): Linter.FlatConfig => ({
   name: 'dethdkn/typescript/rules',
+  // @ts-ignore - This is a valid value
   plugins: { typescript },
   rules: {
     'typescript/array-type': ['error'],

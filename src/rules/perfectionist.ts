@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import perfectionist from 'eslint-plugin-perfectionist'
 
 export default {
@@ -11,4 +12,4 @@ export default {
     // thinking about this one
     // 'perfectionist/sort-vue-attributes': ['error'],
   },
-}
+} as Linter.FlatConfig

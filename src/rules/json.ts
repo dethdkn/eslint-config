@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import json from 'eslint-plugin-jsonc'
 
 export default [
@@ -224,4 +225,4 @@ export default [
       }],
     },
   },
-]
+] as Linter.FlatConfig[]

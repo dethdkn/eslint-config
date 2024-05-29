@@ -7,7 +7,7 @@ export default {
     parser,
     parserOptions: {
       extraFileExtensions: ['.vue'],
-      sourceType: 'module',
+      sourceType: 'module' as const,
     },
   },
 }

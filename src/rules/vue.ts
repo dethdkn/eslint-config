@@ -1,6 +1,7 @@
+import type { Linter } from 'eslint'
 import vue from 'eslint-plugin-vue'
 
-export default (tailwind: boolean, nuxt: boolean, i18n: boolean) => ({
+export default (tailwind: boolean, nuxt: boolean, i18n: boolean): Linter.FlatConfig => ({
   name: 'dethdkn/vue/rules',
   plugins: { vue },
   rules: {

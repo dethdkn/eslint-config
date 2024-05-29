@@ -1,3 +1,5 @@
+import type { Linter } from 'eslint'
+
 export default {
   name: 'dethdkn/javascript/rules',
   rules: {
@@ -1291,4 +1293,4 @@ export default {
     sourceType: 'module',
   },
   linterOptions: { reportUnusedDisableDirectives: true },
-}
+} as Linter.FlatConfig

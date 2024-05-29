@@ -21,18 +21,22 @@ import unicorn from './rules/unicorn.js'
 import unusedImports from './rules/unused-imports.js'
 import vitest from './rules/vitest.js'
 import vue from './rules/vue.js'
+import yaml from './rules/yaml.js'
+import type { Linter } from 'eslint'
 
 export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) => {
   const hasTailwind = opts?.tailwind !== false
   const hasNuxt = opts?.nuxt !== false
   const hasI18n = opts?.i18n === true
 
-  const lint: unknown[] = []
+  const lint: Linter.FlatConfig[] = []
 
   lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), vitest, ...json, vue(hasTailwind, hasNuxt, hasI18n))
 
   if(hasTailwind) lint.push(tailwind)
   if(hasNuxt) lint.push(nuxt)
+
+  lint.push(yaml)
 
   return lint
 }

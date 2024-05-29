@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import antfu from 'eslint-plugin-antfu'
 
 export default {
@@ -9,4 +10,4 @@ export default {
     'antfu/no-import-node-modules-by-path': ['error'],
     'antfu/top-level-function': ['error'],
   },
-}
+} as Linter.FlatConfig

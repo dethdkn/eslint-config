@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import eslintComments from 'eslint-plugin-eslint-comments'
 
 export default {
@@ -9,4 +10,4 @@ export default {
     'eslint-comments/no-unlimited-disable': ['error'],
     'eslint-comments/no-unused-enable': ['error'],
   },
-}
+} as Linter.FlatConfig

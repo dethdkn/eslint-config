@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import regexp from 'eslint-plugin-regexp'
 
 export default {
@@ -65,4 +66,4 @@ export default {
     'regexp/strict': ['error'],
     'regexp/use-ignore-case': ['error'],
   },
-}
+} as Linter.FlatConfig

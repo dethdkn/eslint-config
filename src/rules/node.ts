@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import node from 'eslint-plugin-n'
 
 export default {
@@ -15,4 +16,4 @@ export default {
     'node/prefer-promises/fs': ['error'],
     'node/process-exit-as-throw': ['error'],
   },
-}
+} as Linter.FlatConfig

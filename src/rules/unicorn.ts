@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import unicorn from 'eslint-plugin-unicorn'
 
 export default {
@@ -67,4 +68,4 @@ export default {
     'unicorn/text-encoding-identifier-case': ['error'],
     'unicorn/throw-new-error': ['error'],
   },
-}
+} as Linter.FlatConfig

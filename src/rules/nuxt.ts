@@ -1,4 +1,5 @@
 import nuxt from '@nuxt/eslint-plugin'
+import type { Linter } from 'eslint'
 
 export default {
   name: 'dethdkn/nuxt/rules',
@@ -6,4 +7,4 @@ export default {
   rules: {
     'nuxt/prefer-import-meta': ['error'],
   },
-}
+} as Linter.FlatConfig

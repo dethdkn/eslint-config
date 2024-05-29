@@ -1,3 +1,4 @@
+import type { Linter } from 'eslint'
 import tailwind from 'eslint-plugin-tailwindcss'
 
 export default {
@@ -12,4 +13,4 @@ export default {
     'tailwind/no-custom-classname': ['error'],
     'tailwind/no-unnecessary-arbitrary-value': ['warn'],
   },
-}
+} as Linter.FlatConfig

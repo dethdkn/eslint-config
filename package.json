@@ -36,16 +36,12 @@
   "dependencies": {
     "@eslint/js": "^9.3.0",
     "@nuxt/eslint-plugin": "0.3.13",
-    "@rushstack/eslint-patch": "^1.10.3",
     "@stylistic/eslint-plugin": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
-    "eslint-config-flat-gitignore": "^0.1.5",
-    "eslint-flat-config-utils": "^0.2.5",
+    "eslint": "9.3.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-merge-processors": "^0.1.0",
     "eslint-plugin-antfu": "^2.3.0",
-    "eslint-plugin-command": "^0.2.3",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import-x": "^0.5.1",
     "eslint-plugin-jsdoc": "^48.2.6",
@@ -62,9 +58,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^9.26.0",
     "eslint-plugin-yml": "^1.14.0",
-    "eslint-processor-vue-blocks": "^0.1.2",
     "jsonc-eslint-parser": "^2.4.0",
-    "parse-gitignore": "^2.0.0",
     "toml-eslint-parser": "^0.9.3",
     "vue-eslint-parser": "^9.4.2",
     "yaml-eslint-parser": "^1.2.3"
@@ -72,7 +66,6 @@
   "devDependencies": {
     "@eslint/config-inspector": "^0.4.8",
     "@types/node": "^20.12.12",
-    "eslint": "9.3.0",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
     "vue": "^3.4.27"

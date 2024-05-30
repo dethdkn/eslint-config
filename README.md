@@ -91,6 +91,10 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
         Nuxt
   </a>
+- <a href="https://vue-a11y.github.io/eslint-plugin-vuejs-accessibility" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        Accessibility
+  </a>
 - <a href="https://ota-meshi.github.io/eslint-plugin-yml" target="_blank">
      <img src="https://yaml.org/favicon.svg" alt="Yaml" width="12">
         Yaml
@@ -107,7 +111,7 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
 ## 🚀 Setup
 
 1. Install with your favorite package manager:
-   - **pnpm** : `pnpm i -D eslint @dethdkn/eslint-config`
+   - **pnpm** : `pnpm add -D eslint @dethdkn/eslint-config`
    - npm : `npm i -D eslint @dethdkn/eslint-config`
    - yarn : `yarn add -D eslint @dethdkn/eslint-config`
    - bun : `bun add -D eslint @dethdkn/eslint-config`

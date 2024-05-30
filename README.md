@@ -43,6 +43,10 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://nodejs.org/static/images/favicons/favicon.png" alt="Node" width="12">
         Node
   </a>
+- <a href="https://github.com/eslint-community/eslint-plugin-security" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        Security
+  </a>
 - <a href="https://github.com/gajus/eslint-plugin-jsdoc" target="_blank">
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         JSDoc

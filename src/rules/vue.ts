@@ -4,9 +4,10 @@ import vue from 'eslint-plugin-vue'
 export default (tailwind: boolean, nuxt: boolean, i18n: boolean): Linter.FlatConfig => ({
   name: 'dethdkn/vue/rules',
   plugins: { vue },
+  files: ['**/*.vue'],
   rules: {
     // Base Rules
-    'vue/comment-directive': ['error'],
+    'vue/comment-directive': ['error', { reportUnusedDisableDirectives: true }],
     'vue/jsx-uses-vars': ['error'],
     // Priority A: Essential for Vue.js 3.x
     'vue/no-arrow-functions-in-watch': ['error'],

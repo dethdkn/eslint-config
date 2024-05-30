@@ -2,7 +2,7 @@ import parser from '@typescript-eslint/parser'
 
 export default {
   name: 'dethdkn/typescript/parser',
-  files: ['**/*.?([cm])[jt]s?(x)', '**/*.vue'],
+  files: ['**/*.?([cm])[jt]s?(x)'],
   languageOptions: {
     parser,
     parserOptions: {

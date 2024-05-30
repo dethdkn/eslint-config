@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint'
 
-export default {
+export default (nuxt: boolean): Linter.FlatConfig => ({
   name: 'dethdkn/javascript/rules',
   rules: {
     // Possible Problems
@@ -42,7 +42,7 @@ export default {
     'no-sparse-arrays': ['error'],
     'no-template-curly-in-string': ['error'],
     'no-this-before-super': ['error'],
-    'no-undef': ['error'],
+    'no-undef': [nuxt ? 'off' : 'error'],
     'no-unexpected-multiline': ['error'],
     'no-unmodified-loop-condition': ['error'],
     'no-unreachable': ['error'],
@@ -1293,4 +1293,4 @@ export default {
     sourceType: 'module',
   },
   linterOptions: { reportUnusedDisableDirectives: true },
-} as Linter.FlatConfig
+})

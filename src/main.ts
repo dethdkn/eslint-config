@@ -32,7 +32,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) =
 
   const lint: Linter.FlatConfig[] = []
 
-  lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript, unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), vitest, ...json, vue(hasTailwind, hasNuxt, hasI18n))
+  lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript(hasNuxt), unusedImports, eslintComments, node, jsdoc, importx, unicorn, perfectionist, regexp, typescript(hasNuxt), vitest, ...json, vue(hasTailwind, hasNuxt, hasI18n))
 
   if(hasTailwind) lint.push(tailwind)
   if(hasNuxt) lint.push(nuxt)

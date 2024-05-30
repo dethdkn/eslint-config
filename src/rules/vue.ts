@@ -4,7 +4,6 @@ import vue from 'eslint-plugin-vue'
 export default (tailwind: boolean, nuxt: boolean, i18n: boolean): Linter.FlatConfig => ({
   name: 'dethdkn/vue/rules',
   plugins: { vue },
-  files: ['**/*.vue'],
   rules: {
     // Base Rules
     'vue/comment-directive': ['error', { reportUnusedDisableDirectives: true }],

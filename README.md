@@ -95,6 +95,10 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Accessibility
   </a>
+- <a href="https://eslint-plugin-vue-i18n.intlify.dev/" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        I18n
+  </a>
 - <a href="https://ota-meshi.github.io/eslint-plugin-yml" target="_blank">
      <img src="https://yaml.org/favicon.svg" alt="Yaml" width="12">
         Yaml
@@ -181,12 +185,20 @@ export default dethdkn()
 
 ## ⚙️ Configutarion
 
-- `tailwind`, `nuxt`, `i18n` rules can be disabled:
+- `tailwind` and `nuxt` rules can be disabled:
 ```js
 // eslint.config.mjs
 import dethdkn from '@dethdkn/eslint-config'
 
-export default dethdkn({tailwind: false, nuxt: false, i18n: false})
+export default dethdkn({tailwind: false, nuxt: false})
+```
+
+- `i18n` rules can be enabled:
+```js
+// eslint.config.mjs
+import dethdkn from '@dethdkn/eslint-config'
+
+export default dethdkn({i18n: false})
 ```
 
 ## 📝 License

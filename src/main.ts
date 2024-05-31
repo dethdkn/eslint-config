@@ -6,6 +6,7 @@ import yamlParser from './parsers/yaml.js'
 import accessibility from './rules/accessibility.js'
 import antfu from './rules/antfu.js'
 import eslintComments from './rules/eslint-comments.js'
+import i18n from './rules/i18n.js'
 import ignores from './rules/ignores.js'
 import importx from './rules/importx.js'
 import javascript from './rules/javascript.js'
@@ -39,7 +40,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) =
   if(hasTailwind) lint.push(tailwind)
   if(hasNuxt) lint.push(nuxt)
 
-  lint.push(accessibility, yaml, toml)
+  lint.push(accessibility, i18n(hasI18n), yaml, toml)
 
   return lint
 }

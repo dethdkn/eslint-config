@@ -24,5 +24,11 @@ export default (hasI18n: boolean): Linter.FlatConfig => {
       'i18n/prefer-linked-key-with-paren': [val],
       'i18n/sfc-locale-attr': [val],
     },
+    settings: {
+      'vue-i18n': {
+        localeDir: './locales/*.json',
+        messageSyntaxVersion: '^9.0.0',
+      },
+    },
   }
 }

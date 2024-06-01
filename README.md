@@ -87,6 +87,10 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://tailwindcss.com/favicons/favicon-16x16.png" alt="TailwindCSS" width="12">
         TailwindCSS
   </a>
+- <a href="https://ota-meshi.github.io/eslint-plugin-css/" target="_blank">
+     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="TailwindCSS" width="12">
+        CSS
+  </a>
 - <a href="https://eslint.nuxt.com/packages/plugin" target="_blank">
      <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
         Nuxt

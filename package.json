@@ -1,7 +1,7 @@
 {
   "name": "@dethdkn/eslint-config",
   "type": "module",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "packageManager": "pnpm@9.1.4",
   "description": "🧹 My Opinionated ESLint Config",
   "author": {

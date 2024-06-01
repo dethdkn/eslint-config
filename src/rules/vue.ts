@@ -147,6 +147,7 @@ export default (tailwind: boolean, nuxt: boolean, i18n: boolean): Linter.FlatCon
     'vue/no-restricted-block': [tailwind ? 'error' : 'off', { element: 'style', message: 'Use TailwindCSS instead.' }],
     'vue/no-restricted-html-elements': [nuxt ? 'error' : 'off', { element: 'a', message: 'Use <NuxtLink> instead.' }],
     'vue/no-restricted-static-attribute': [tailwind ? 'error' : 'off', { key: 'style', message: 'Use TailwindCSS instead.' }],
+    'vue/no-restricted-v-bind': [tailwind ? 'error' : 'off', { argument: 'style', message: 'Use TailwindCSS instead.' }],
     'vue/no-root-v-if': ['error'],
     'vue/no-setup-props-reactivity-loss': ['error'],
     'vue/no-this-in-before-route-enter': ['error'],

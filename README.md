@@ -191,7 +191,7 @@ export default dethdkn()
 }
 ```
 
-## ⚙️ Configutarion
+## ⚙️ Options
 
 - `tailwind` and `nuxt` rules can be disabled:
 ```js

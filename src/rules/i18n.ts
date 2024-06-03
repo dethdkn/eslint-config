@@ -19,7 +19,7 @@ export default (hasI18n: boolean): Linter.FlatConfig => {
       'i18n/key-format-style': [val, 'snake_case'],
       'i18n/no-duplicate-keys-in-locale': [val],
       'i18n/no-missing-keys-in-other-locales': [val],
-      'i18n/no-unused-keys': [val],
+      'i18n/no-unused-keys': [val, { extensions: ['.js', '.ts', '.vue'] }],
       'i18n/prefer-sfc-lang-attr': [val],
       'i18n/prefer-linked-key-with-paren': [val],
       'i18n/sfc-locale-attr': [val],

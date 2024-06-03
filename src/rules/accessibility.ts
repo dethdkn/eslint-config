@@ -14,7 +14,7 @@ export default {
     'accessibility/form-control-has-label': ['warn'],
     'accessibility/heading-has-content': ['warn'],
     'accessibility/iframe-has-title': ['warn'],
-    'accessibility/label-has-for': ['warn', { controlComponents: [
+    'accessibility/label-has-for': ['warn', { required: { some: ['nesting', 'id'] }, components: ['label', 'UFormGroup'], controlComponents: [
       'input',
       'meter',
       'progress',

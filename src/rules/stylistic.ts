@@ -16,7 +16,7 @@ export default {
     'stylistic/comma-spacing': ['error', { before: false, after: true }],
     'stylistic/comma-style': ['error', 'last'],
     'stylistic/computed-property-spacing': ['error', 'never', { enforceForClassMembers: true }],
-    'stylistic/dot-location': ['error', 'object'],
+    'stylistic/dot-location': ['error', 'property'],
     'stylistic/eol-last': ['error', 'always'],
     'stylistic/function-call-argument-newline': ['error', 'never'],
     'stylistic/function-call-spacing': ['error', 'never'],

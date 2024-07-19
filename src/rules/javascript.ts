@@ -87,6 +87,7 @@ export default (nuxt: boolean): Linter.FlatConfig => ({
     'no-proto': ['error'],
     'no-redeclare': ['error'],
     'no-regex-spaces': ['error'],
+    'no-restricted-globals': [nuxt ? 'error' : 'off', { name: 'window', message: 'Try not to use window in nuxt.' }],
     'no-script-url': ['error'],
     'no-sequences': ['error'],
     'no-shadow-restricted-names': ['error'],

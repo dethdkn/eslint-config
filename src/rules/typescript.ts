@@ -38,6 +38,5 @@ export default (nuxt: boolean): Linter.FlatConfig => ({
     'typescript/prefer-as-const': ['error'],
     'typescript/prefer-function-type': ['error'],
     'typescript/prefer-literal-enum-member': ['error'],
-    'typescript/sort-type-constituents': ['warn'],
   },
 })

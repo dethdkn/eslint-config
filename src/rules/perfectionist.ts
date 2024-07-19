@@ -9,7 +9,7 @@ export default {
     'perfectionist/sort-exports': ['error'],
     'perfectionist/sort-imports': ['error'],
     'perfectionist/sort-named-exports': ['error'],
-    // thinking about this one
-    // 'perfectionist/sort-vue-attributes': ['error'],
+    'perfectionist/sort-intersection-types': ['error'],
+    'perfectionist/sort-union-types': ['error'],
   },
 } as Linter.FlatConfig

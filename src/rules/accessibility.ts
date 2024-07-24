@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import accessibility from 'eslint-plugin-vuejs-accessibility'
 
 export default {

@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import toml from 'eslint-plugin-toml'
 
 export default {

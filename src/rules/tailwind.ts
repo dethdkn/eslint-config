@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import tailwind from 'eslint-plugin-tailwindcss'
 
 export default {

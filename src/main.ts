@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import jsonParser from './parsers/json.js'
 import tomlParser from './parsers/toml.js'
 import tsParser from './parsers/typescript.js'

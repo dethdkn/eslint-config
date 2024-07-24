@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import security from 'eslint-plugin-security'
 
 export default {

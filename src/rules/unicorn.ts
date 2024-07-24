@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import unicorn from 'eslint-plugin-unicorn'
 
 export default (nuxt: boolean): Linter.FlatConfig[] => [

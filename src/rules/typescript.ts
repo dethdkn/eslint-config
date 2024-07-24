@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import { plugin } from 'typescript-eslint'
 
 export default (nuxt: boolean): Linter.FlatConfig => ({

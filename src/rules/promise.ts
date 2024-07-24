@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-
 import promise from 'eslint-plugin-promise'
 
 export default {

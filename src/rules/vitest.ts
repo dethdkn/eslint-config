@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import onlyTest from 'eslint-plugin-no-only-tests'
 import vitest from 'eslint-plugin-vitest'
 

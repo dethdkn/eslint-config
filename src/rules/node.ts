@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import node from 'eslint-plugin-n'
 
 export default {

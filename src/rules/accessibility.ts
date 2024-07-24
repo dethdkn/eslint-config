@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import accessibility from 'eslint-plugin-vuejs-accessibility'
 
 export default {
@@ -56,11 +57,11 @@ export default {
     ] }],
     'accessibility/mouse-events-have-key-events': ['warn'],
     'accessibility/no-access-key': ['warn'],
-    // 'accessibility/no-aria-hidden-on-focusable': ['warn'],
+    'accessibility/no-aria-hidden-on-focusable': ['warn'],
     'accessibility/no-autofocus': ['warn'],
     'accessibility/no-distracting-elements': ['warn'],
     'accessibility/no-redundant-roles': ['warn'],
-    // 'accessibility/no-role-presentation-on-focusable': ['warn'],
+    'accessibility/no-role-presentation-on-focusable': ['warn'],
     'accessibility/no-static-element-interactions': ['warn'],
     'accessibility/role-has-required-aria-props': ['warn'],
     'accessibility/tabindex-no-positive': ['warn'],

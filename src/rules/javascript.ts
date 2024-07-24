@@ -31,6 +31,7 @@ export default (nuxt: boolean): Linter.FlatConfig => ({
     'no-import-assign': ['error'],
     'no-inner-declarations': ['error', 'both'],
     'no-irregular-whitespace': ['error'],
+    'no-loss-of-precision': ['error'],
     'no-misleading-character-class': ['error'],
     'no-new-native-nonconstructor': ['error'],
     'no-obj-calls': ['error'],

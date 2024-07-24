@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import yaml from 'eslint-plugin-yml'
 
 export default {

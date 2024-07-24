@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import antfu from 'eslint-plugin-antfu'
 
 export default {

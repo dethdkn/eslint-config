@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import eslintComments from 'eslint-plugin-eslint-comments'
 
 export default {

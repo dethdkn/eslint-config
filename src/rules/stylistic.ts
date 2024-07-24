@@ -1,5 +1,6 @@
-import stylistic from '@stylistic/eslint-plugin'
 import type { Linter } from 'eslint'
+
+import stylistic from '@stylistic/eslint-plugin'
 
 export default {
   name: 'dethdkn/stylistic/rules',

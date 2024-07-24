@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import vue from 'eslint-plugin-vue'
 
 export default (tailwind: boolean, nuxt: boolean, i18n: boolean): Linter.FlatConfig => ({

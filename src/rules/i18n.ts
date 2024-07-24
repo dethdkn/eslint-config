@@ -1,5 +1,6 @@
-import i18n from '@intlify/eslint-plugin-vue-i18n'
 import type { Linter } from 'eslint'
+
+import i18n from '@intlify/eslint-plugin-vue-i18n'
 
 export default (hasI18n: boolean): Linter.FlatConfig => {
   const val = hasI18n ? 'error' : 'off'

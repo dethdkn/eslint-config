@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import regexp from 'eslint-plugin-regexp'
 
 export default {

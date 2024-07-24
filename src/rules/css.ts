@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import css from 'eslint-plugin-css'
 
 export default {

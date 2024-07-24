@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+
 import perfectionist from 'eslint-plugin-perfectionist'
 
 export default {

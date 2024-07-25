@@ -20,6 +20,7 @@ export default (nuxt: boolean): Linter.FlatConfig[] => [
       'unicorn/no-for-loop': ['error'],
       'unicorn/no-hex-escape': ['error'],
       'unicorn/no-instanceof-array': ['error'],
+      'unicorn/no-length-as-slice-end': ['error'],
       'unicorn/no-negation-in-equality-check': ['error'],
       'unicorn/no-new-array': ['error'],
       'unicorn/no-new-buffer': ['error'],

@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint'
 
-declare const dethdkn: (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean })=> Linter.FlatConfig[]
+declare const dethdkn: (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean })=> Linter.Config[]
 
 export default dethdkn

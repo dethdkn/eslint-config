@@ -65,4 +65,4 @@ export default {
     'accessibility/role-has-required-aria-props': ['warn'],
     'accessibility/tabindex-no-positive': ['warn'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

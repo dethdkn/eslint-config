@@ -35,7 +35,7 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) =
   const hasNuxt = opts?.nuxt !== false
   const hasI18n = opts?.i18n === true
 
-  const lint: Linter.FlatConfig[] = []
+  const lint: Linter.Config[] = []
 
   lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript(hasNuxt), unusedImports, eslintComments, node, promise, security, jsdoc, importx, ...unicorn(hasNuxt), perfectionist, regexp, typescript(hasNuxt), vitest, ...json, vue(hasTailwind, hasNuxt, hasI18n))
 

@@ -13,4 +13,4 @@ export default {
     'tailwind/no-custom-classname': ['error'],
     'tailwind/no-unnecessary-arbitrary-value': ['warn'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

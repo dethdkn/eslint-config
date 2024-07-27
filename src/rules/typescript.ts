@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint'
 import { plugin } from 'typescript-eslint'
 
-export default (nuxt: boolean): Linter.FlatConfig => ({
+export default (nuxt: boolean): Linter.Config => ({
   name: 'dethdkn/typescript/rules',
   // @ts-ignore - This is a valid value
   plugins: { typescript: plugin },

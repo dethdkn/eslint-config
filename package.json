@@ -1,8 +1,8 @@
 {
   "name": "@dethdkn/eslint-config",
   "type": "module",
-  "version": "1.5.2",
-  "packageManager": "pnpm@9.5.0",
+  "version": "1.5.3",
+  "packageManager": "pnpm@9.6.0",
   "description": "🧹 My Opinionated ESLint Config",
   "author": {
     "name": "Gabriel 'DethDKN' Rosa",
@@ -39,12 +39,12 @@
     "lint:build": "tsc && npx @eslint/config-inspector build"
   },
   "dependencies": {
-    "@eslint/js": "^9.7.0",
+    "@eslint/js": "^9.8.0",
     "@intlify/eslint-plugin-vue-i18n": "3.0.0",
-    "@nuxt/eslint-plugin": "0.3.13",
-    "@stylistic/eslint-plugin": "^2.3.0",
+    "@nuxt/eslint-plugin": "0.4.0",
+    "@stylistic/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "8.0.0-alpha.53",
-    "eslint": "^9.7.0",
+    "eslint": "^9.8.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-antfu": "^2.3.4",
     "eslint-plugin-css": "^0.10.0",
@@ -52,7 +52,7 @@
     "eslint-plugin-import-x": "^3.1.0",
     "eslint-plugin-jsdoc": "^48.8.3",
     "eslint-plugin-jsonc": "^2.16.0",
-    "eslint-plugin-n": "^17.9.0",
+    "eslint-plugin-n": "^17.10.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-perfectionist": "^3.0.0",
     "eslint-plugin-promise": "^7.0.0",
@@ -74,6 +74,7 @@
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.2",
+    "@types/eslint": "^9.6.0",
     "@types/node": "^20.14.12",
     "tailwindcss": "^3.4.7",
     "terser": "^5.31.3",

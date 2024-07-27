@@ -10,4 +10,4 @@ export default {
     'antfu/no-import-node-modules-by-path': ['error'],
     'antfu/top-level-function': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

@@ -64,4 +64,4 @@ export default {
     'stylistic/type-named-tuple-spacing': ['error'],
     'stylistic/wrap-iife': ['error', 'inside'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

@@ -13,4 +13,4 @@ export default {
     'importx/no-webpack-loader-syntax': ['error'],
     'importx/newline-after-import': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

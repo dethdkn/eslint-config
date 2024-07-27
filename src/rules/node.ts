@@ -16,4 +16,4 @@ export default {
     'node/prefer-promises/fs': ['error'],
     'node/process-exit-as-throw': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

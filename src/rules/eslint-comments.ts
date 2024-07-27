@@ -10,4 +10,4 @@ export default {
     'eslint-comments/no-unlimited-disable': ['error'],
     'eslint-comments/no-unused-enable': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

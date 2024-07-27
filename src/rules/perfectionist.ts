@@ -12,4 +12,4 @@ export default {
     'perfectionist/sort-intersection-types': ['error'],
     'perfectionist/sort-union-types': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

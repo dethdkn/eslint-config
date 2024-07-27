@@ -19,4 +19,4 @@ export default {
     'css/number-leading-zero': ['warn'],
     'css/property-casing': ['warn', 'kebab-case'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

@@ -27,4 +27,4 @@ export default {
     'toml/spaced-comment': ['error'],
     'toml/table-bracket-spacing': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

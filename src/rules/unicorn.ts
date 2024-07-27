@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint'
 import unicorn from 'eslint-plugin-unicorn'
 
-export default (nuxt: boolean): Linter.FlatConfig[] => [
+export default (nuxt: boolean): Linter.Config[] => [
   {
     name: 'dethdkn/unicorn/rules',
     plugins: { unicorn },

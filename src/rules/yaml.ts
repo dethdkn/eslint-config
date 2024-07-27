@@ -26,4 +26,4 @@ export default {
     'yaml/quotes': ['error', { avoidEscape: false, prefer: 'single' }],
     'yaml/spaced-comment': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

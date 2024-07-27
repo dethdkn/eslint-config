@@ -66,4 +66,4 @@ export default {
     'regexp/strict': ['error'],
     'regexp/use-ignore-case': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

@@ -19,4 +19,4 @@ export default {
     'security/detect-pseudoRandomBytes': ['warn'],
     'security/detect-unsafe-regex': ['warn'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

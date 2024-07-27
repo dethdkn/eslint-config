@@ -13,4 +13,4 @@ export default {
     'vitest/prefer-hooks-in-order': ['error'],
     'vitest/prefer-lowercase-title': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

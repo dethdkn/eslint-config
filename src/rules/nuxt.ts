@@ -7,4 +7,4 @@ export default {
   rules: {
     'nuxt/prefer-import-meta': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

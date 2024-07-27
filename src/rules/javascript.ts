@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint'
 
-export default (nuxt: boolean): Linter.FlatConfig => ({
+export default (nuxt: boolean): Linter.Config => ({
   name: 'dethdkn/javascript/rules',
   rules: {
     // Possible Problems

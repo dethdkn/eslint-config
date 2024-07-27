@@ -23,4 +23,4 @@ export default {
     'jsdoc/check-alignment': ['warn'],
     'jsdoc/multiline-blocks': ['warn'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

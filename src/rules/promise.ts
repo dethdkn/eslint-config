@@ -18,4 +18,4 @@ export default {
     'promise/prefer-await-to-then': ['error'],
     'promise/valid-params': ['error'],
   },
-} as Linter.FlatConfig
+} as Linter.Config

@@ -42,15 +42,15 @@
     "@eslint/js": "^9.8.0",
     "@intlify/eslint-plugin-vue-i18n": "3.0.0",
     "@nuxt/eslint-plugin": "0.4.0",
-    "@stylistic/eslint-plugin": "^2.4.0",
-    "@typescript-eslint/parser": "8.0.0-alpha.53",
+    "@stylistic/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "8.0.0",
     "eslint": "^9.8.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-antfu": "^2.3.4",
     "eslint-plugin-css": "^0.10.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import-x": "^3.1.0",
-    "eslint-plugin-jsdoc": "^48.8.3",
+    "eslint-plugin-jsdoc": "^48.10.2",
     "eslint-plugin-jsonc": "^2.16.0",
     "eslint-plugin-n": "^17.10.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
@@ -68,17 +68,17 @@
     "eslint-plugin-yml": "^1.14.0",
     "jsonc-eslint-parser": "^2.4.0",
     "toml-eslint-parser": "^0.10.0",
-    "typescript-eslint": "8.0.0-alpha.53",
+    "typescript-eslint": "8.0.0",
     "vue-eslint-parser": "^9.4.3",
     "yaml-eslint-parser": "^1.2.3"
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.2",
     "@types/eslint": "^9.6.0",
-    "@types/node": "^20.14.12",
+    "@types/node": "^22.0.2",
     "tailwindcss": "^3.4.7",
     "terser": "^5.31.3",
     "typescript": "^5.5.4",
-    "vue": "^3.4.34"
+    "vue": "^3.4.35"
   }
 }

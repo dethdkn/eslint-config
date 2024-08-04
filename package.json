@@ -1,7 +1,7 @@
 {
   "name": "@dethdkn/eslint-config",
   "type": "module",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "packageManager": "pnpm@9.6.0",
   "description": "🧹 My Opinionated ESLint Config",
   "author": {
@@ -25,7 +25,8 @@
     "nuxt",
     "tailwindcss",
     "vue",
-    "json"
+    "json",
+    "nuxt"
   ],
   "main": "dist/main.js",
   "types": "types/main.d.ts",
@@ -41,7 +42,7 @@
   "dependencies": {
     "@eslint/js": "^9.8.0",
     "@intlify/eslint-plugin-vue-i18n": "3.0.0",
-    "@nuxt/eslint-plugin": "0.4.0",
+    "@nuxt/eslint-plugin": "0.5.0",
     "@stylistic/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "8.0.0",
     "eslint": "^9.8.0",
@@ -54,7 +55,7 @@
     "eslint-plugin-jsonc": "^2.16.0",
     "eslint-plugin-n": "^17.10.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
-    "eslint-plugin-perfectionist": "^3.1.0",
+    "eslint-plugin-perfectionist": "^3.1.1",
     "eslint-plugin-promise": "^7.0.0",
     "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-security": "^3.0.1",

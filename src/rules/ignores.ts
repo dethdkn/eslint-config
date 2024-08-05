@@ -59,6 +59,8 @@ export default {
     '**/.nuxt/**',
     'dist',
     '**/dist/**',
+    'dist-electron',
+    '**/dist-electron/**',
     '.serverless',
     '**/.serverless/**',
     '.idea',

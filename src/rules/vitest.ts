@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint'
+import vitest from '@vitest/eslint-plugin'
 import onlyTest from 'eslint-plugin-no-only-tests'
-import vitest from 'eslint-plugin-vitest'
 
 export default {
   name: 'dethdkn/vitest/rules',

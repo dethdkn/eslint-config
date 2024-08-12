@@ -16,6 +16,7 @@ export default {
     'promise/param-names': ['error'],
     'promise/prefer-await-to-callbacks': ['error'],
     'promise/prefer-await-to-then': ['error'],
+    'promise/spec-only': ['error'],
     'promise/valid-params': ['error'],
   },
 } as Linter.Config

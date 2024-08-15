@@ -3,7 +3,7 @@ import perfectionist from 'eslint-plugin-perfectionist'
 
 export default {
   name: 'dethdkn/perfectionist/rules',
-  plugins: { perfectionist },
+  plugins: { perfectionist: perfectionist as unknown },
   rules: {
     'perfectionist/sort-array-includes': ['error'],
     'perfectionist/sort-exports': ['error'],

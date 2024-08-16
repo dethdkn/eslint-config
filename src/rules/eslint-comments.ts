@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint'
-import eslintComments from 'eslint-plugin-eslint-comments'
+import eslintComments from '@eslint-community/eslint-plugin-eslint-comments'
 
 export default {
   name: 'dethdkn/eslint-comments/rules',

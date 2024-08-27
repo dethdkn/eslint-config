@@ -81,7 +81,7 @@ export default (nuxt: boolean): Linter.Config[] => [
   },
   {
     name: 'dethdkn/unicorn/nuxt-kebab-files/rules',
-    files: ['**/layouts/**/*.vue', '**/middleware/**/*.ts', '**/pages/**/*.vue', '**/plugins/**/*.ts', '**/server/api/**/*.ts', '**/server/routes/**/*.ts', '**/server/middleware/**/*.ts', '**/server/plugins/**/*.ts'],
+    files: ['**/layouts/**/*.vue', '**/middleware/**/*.ts', '**/pages/**/*.vue', '**/plugins/**/*.ts', '**/server/api/**/*.ts', '**/server/routes/**/*.ts', '**/server/middleware/**/*.ts', '**/server/plugins/**/*.ts', '**/server/tasks/**/*.ts'],
     rules: {
       'unicorn/filename-case': [nuxt ? 'error' : 'off', { case: 'kebabCase' }],
     },

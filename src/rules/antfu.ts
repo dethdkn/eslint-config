@@ -5,6 +5,7 @@ export default {
   name: 'dethdkn/antfu/rules',
   plugins: { antfu },
   rules: {
+    'antfu/consistent-chaining': ['error'],
     'antfu/consistent-list-newline': ['error'],
     'antfu/import-dedupe': ['error'],
     'antfu/no-import-node-modules-by-path': ['error'],

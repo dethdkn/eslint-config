@@ -1,7 +1,7 @@
 {
   "name": "@dethdkn/eslint-config",
   "type": "module",
-  "version": "1.5.15",
+  "version": "1.5.16",
   "packageManager": "pnpm@9.9.0",
   "description": "🧹 My Opinionated ESLint Config",
   "author": {
@@ -41,22 +41,22 @@
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
-    "@eslint/js": "^9.9.1",
+    "@eslint/js": "^9.10.0",
     "@intlify/eslint-plugin-vue-i18n": "3.0.0",
-    "@nuxt/eslint-plugin": "0.5.5",
+    "@nuxt/eslint-plugin": "0.5.6",
     "@stylistic/eslint-plugin": "^2.7.2",
     "@typescript-eslint/parser": "8.4.0",
     "@vitest/eslint-plugin": "^1.1.0",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "eslint-import-resolver-typescript": "^3.6.3",
-    "eslint-plugin-antfu": "^2.4.1",
+    "eslint-plugin-antfu": "^2.5.0",
     "eslint-plugin-css": "^0.11.0",
-    "eslint-plugin-import-x": "^4.2.0",
+    "eslint-plugin-import-x": "^4.2.1",
     "eslint-plugin-jsdoc": "^50.2.2",
     "eslint-plugin-jsonc": "^2.16.0",
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-perfectionist": "3.3.0",
+    "eslint-plugin-perfectionist": "3.5.0",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-security": "^3.0.1",
@@ -75,11 +75,10 @@
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.4",
-    "@types/eslint": "^9.6.1",
-    "@types/node": "^22.5.3",
+    "@types/node": "^22.5.4",
     "tailwindcss": "^3.4.10",
     "terser": "^5.31.6",
     "typescript": "^5.5.4",
-    "vue": "^3.5.0"
+    "vue": "^3.5.3"
   }
 }

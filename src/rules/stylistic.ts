@@ -59,7 +59,7 @@ export default {
     'stylistic/switch-colon-spacing': ['error', { after: true, before: false }],
     'stylistic/template-curly-spacing': ['error', 'never'],
     'stylistic/template-tag-spacing': ['error', 'never'],
-    'stylistic/type-annotation-spacing': ['error', { after: true, before: false, overrides: { operator: { after: true, before: true } } }],
+    'stylistic/type-annotation-spacing': ['error', { after: true, before: false }],
     'stylistic/type-generic-spacing': ['error'],
     'stylistic/type-named-tuple-spacing': ['error'],
     'stylistic/wrap-iife': ['error', 'inside'],

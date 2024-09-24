@@ -26,7 +26,7 @@ export default (hasI18n: boolean): Linter.Config => {
     },
     settings: {
       'vue-i18n': {
-        localeDir: './locales/*.json',
+        localeDir: ['./locales/*.json', './app/locales/*.json'],
         messageSyntaxVersion: '^9.0.0',
       },
     },

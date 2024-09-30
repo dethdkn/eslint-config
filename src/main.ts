@@ -30,6 +30,15 @@ import vitest from './rules/vitest.js'
 import vue from './rules/vue.js'
 import yaml from './rules/yaml.js'
 
+/**
+ * @function
+ * Returns an ESLint configuration based on the provided options.
+ *
+ * @example
+ * // eslint.config.mjs
+ * export default dethdkn({ tailwind: true, nuxt: true, i18n: true })
+ *
+ */
 export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) => {
   const hasTailwind = opts?.tailwind !== false
   const hasNuxt = opts?.nuxt !== false

@@ -4,6 +4,8 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "strictNullChecks": true,
+    "declaration": true,
+    "emitDeclarationOnly": false,
     "outDir": "dist",
     "sourceMap": false,
     "skipLibCheck": true

@@ -14,6 +14,7 @@ export default (tailwind: boolean, nuxt: boolean, i18n: boolean): Linter.Config 
     'vue/no-child-content': ['warn'],
     'vue/no-computed-properties-in-data': ['error'],
     'vue/no-deprecated-data-object-declaration': ['error'],
+    'vue/no-deprecated-delete-set': ['error'],
     'vue/no-deprecated-destroyed-lifecycle': ['error'],
     'vue/no-deprecated-dollar-listeners-api': ['error'],
     'vue/no-deprecated-dollar-scopedslots-api': ['error'],

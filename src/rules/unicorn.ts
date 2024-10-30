@@ -8,6 +8,7 @@ export default (nuxt: boolean): Linter.Config[] => [
     rules: {
       'unicorn/catch-error-name': ['error'],
       'unicorn/consistent-destructuring': ['error'],
+      'unicorn/consistent-existence-index-check': ['error'],
       'unicorn/consistent-function-scoping': ['error'],
       'unicorn/empty-brace-spaces': ['error'],
       'unicorn/error-message': ['error'],
@@ -44,8 +45,10 @@ export default (nuxt: boolean): Linter.Config[] => [
       'unicorn/prefer-dom-node-dataset': ['error'],
       'unicorn/prefer-dom-node-remove': ['error'],
       'unicorn/prefer-dom-node-text-content': ['error'],
+      'unicorn/prefer-global-this': ['error'],
       'unicorn/prefer-includes': ['error'],
       'unicorn/prefer-keyboard-event-key': ['error'],
+      'unicorn/prefer-math-min-max': ['error'],
       'unicorn/prefer-modern-dom-apis': ['error'],
       'unicorn/prefer-modern-math-apis': ['error'],
       'unicorn/prefer-module': ['error'],

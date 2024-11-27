@@ -206,7 +206,7 @@ export default dethdkn({tailwind: false, nuxt: false})
 // eslint.config.mjs
 import dethdkn from '@dethdkn/eslint-config'
 
-export default dethdkn({i18n: false})
+export default dethdkn({i18n: true})
 ```
 
 ## 📝 License

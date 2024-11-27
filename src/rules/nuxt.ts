@@ -6,5 +6,6 @@ export default {
   plugins: { nuxt },
   rules: {
     'nuxt/prefer-import-meta': ['error'],
+    'nuxt/nuxt-config-keys-order': ['error'],
   },
 } as Linter.Config

@@ -12,6 +12,7 @@ export default (hasI18n: boolean): Linter.Config => {
       'i18n/no-deprecated-i18n-places-prop': [val],
       'i18n/no-deprecated-modulo-syntax': [val],
       'i18n/no-deprecated-tc': [val],
+      'i18n/no-deprecated-v-t': [val],
       'i18n/no-html-messages': [val],
       'i18n/no-i18n-t-path-prop': [val],
       'i18n/no-v-html': [val],

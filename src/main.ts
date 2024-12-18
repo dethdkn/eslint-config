@@ -21,7 +21,6 @@ import promise from './rules/promise.js'
 import regexp from './rules/regexp.js'
 import security from './rules/security.js'
 import stylistic from './rules/stylistic.js'
-import tailwind from './rules/tailwind.js'
 import toml from './rules/toml.js'
 import typescript from './rules/typescript.js'
 import unicorn from './rules/unicorn.js'
@@ -39,7 +38,7 @@ import yaml from './rules/yaml.js'
  * export default dethdkn({ tailwind: true, nuxt: true, i18n: true })
  *
  */
-export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) => {
+export default async (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) => {
   const hasTailwind = opts?.tailwind !== false
   const hasNuxt = opts?.nuxt !== false
   const hasI18n = opts?.i18n === true
@@ -48,7 +47,10 @@ export default (opts?: { tailwind?: boolean, nuxt?: boolean, i18n?: boolean }) =
 
   lint.push(ignores, tsParser, vueParser, jsonParser, tomlParser, yamlParser, stylistic, antfu, javascript(hasNuxt), unusedImports, eslintComments, node, promise, security, jsdoc, importx, ...unicorn(hasNuxt), perfectionist, regexp, typescript(hasNuxt), vitest, ...json, vue(hasTailwind, hasNuxt, hasI18n))
 
-  if(hasTailwind) lint.push(tailwind)
+  if(hasTailwind){
+    const tailwindConfig = await import('./rules/tailwind.js')
+    lint.push(tailwindConfig.default)
+  }
 
   lint.push(css)
 

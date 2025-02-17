@@ -19,29 +19,21 @@
 ## 📦 About This Package
 This is my opinionated `eslint-config`, heavily inspired by <a href="https://github.com/antfu/eslint-config">Antfu's config</a>. This setup is a combination of the following rules:
 
-- <a href="https://eslint.style" target="_blank">
-     <img src="https://eslint.style/logo.svg" alt="Stylistic" width="12">
-        Stylistic
-  </a>
-- <a href="https://github.com/antfu/eslint-plugin-antfu" target="_blank">
-     <img src="https://antfu.me/favicon.svg" alt="Antfu" width="12">
-        Antfu
-  </a>
 - <a href="https://eslint.org/docs/latest/rules" target="_blank">
      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" width="12">
         Javascript
   </a>
-- <a href="https://github.com/sweepline/eslint-plugin-unused-imports" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        Unused Imports
-  </a>
-- <a href="https://mysticatea.github.io/eslint-plugin-eslint-comments" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        Eslint Comments
-  </a>
 - <a href="https://github.com/eslint-community/eslint-plugin-n" target="_blank">
      <img src="https://nodejs.org/static/images/favicons/favicon.png" alt="Node" width="12">
         Node
+  </a>
+- <a href="https://github.com/un-ts/eslint-plugin-import-x" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        Import X
+  </a>
+- <a href="https://github.com/sweepline/eslint-plugin-unused-imports" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        Unused Imports
   </a>
 - <a href="https://github.com/eslint-community/eslint-plugin-promise" target="_blank">
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
@@ -51,29 +43,49 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Security
   </a>
+- <a href="https://mysticatea.github.io/eslint-plugin-eslint-comments" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        Eslint Comments
+  </a>
 - <a href="https://github.com/gajus/eslint-plugin-jsdoc" target="_blank">
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         JSDoc
   </a>
-- <a href="https://github.com/un-ts/eslint-plugin-import-x" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        Import X
+- <a href="https://github.com/antfu/eslint-plugin-antfu" target="_blank">
+     <img src="https://antfu.me/favicon.svg" alt="Antfu" width="12">
+        Antfu
   </a>
-- <a href="https://github.com/sindresorhus/eslint-plugin-unicorn" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        Unicorn
+- <a href="https://orm.drizzle.team/docs/eslint-plugin" target="_blank">
+     <img src="https://orm.drizzle.team/favicon.ico" alt="Drizzle" width="12">
+        Drizzle
   </a>
-- <a href="https://eslint-plugin-perfectionist.azat.io" target="_blank">
-     <img src="https://eslint-plugin-perfectionist.azat.io/favicon.ico" alt="Perfectionist" width="12">
-        Perfectionist
+- <a href="https://github.com/gajus/eslint-plugin-zod" target="_blank">
+     <img src="https://zod.dev/static/favicon.ico" alt="Drizzle" width="12">
+        Zod
+  </a>
+- <a href="https://typescript-eslint.io/rules" target="_blank">
+     <img src="https://www.typescriptlang.org/favicon-32x32.png" alt="Typescript" width="12">
+        Typescript
+  </a>
+- <a href="https://eslint.style" target="_blank">
+     <img src="https://eslint.style/logo.svg" alt="Stylistic" width="12">
+        Stylistic
+  </a>
+- <a href="https://ota-meshi.github.io/eslint-plugin-css/" target="_blank">
+     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="TailwindCSS" width="12">
+        CSS
   </a>
 - <a href="https://ota-meshi.github.io/eslint-plugin-regexp" target="_blank">
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Regexp
   </a>
-- <a href="https://typescript-eslint.io/rules" target="_blank">
-     <img src="https://www.typescriptlang.org/favicon-32x32.png" alt="Typescript" width="12">
-        Typescript
+- <a href="https://eslint-plugin-perfectionist.azat.io" target="_blank">
+     <img src="https://eslint-plugin-perfectionist.azat.io/favicon.ico" alt="Perfectionist" width="12">
+        Perfectionist
+  </a>
+- <a href="https://github.com/sindresorhus/eslint-plugin-unicorn" target="_blank">
+     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
+        Unicorn
   </a>
 - <a href="https://github.com/veritem/eslint-plugin-vitest" target="_blank">
      <img src="https://vitest.dev/favicon.ico" alt="Vitest" width="12">
@@ -83,30 +95,6 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://www.json.org/favicon.png" alt="Json" width="12">
         Json
   </a>
-- <a href="https://eslint.vuejs.org" target="_blank">
-     <img src="https://vuejs.org/logo.svg" alt="Vue" width="12">
-        Vue
-  </a>
-- <a href="https://github.com/francoismassart/eslint-plugin-tailwindcss" target="_blank">
-     <img src="https://tailwindcss.com/favicons/favicon-16x16.png" alt="TailwindCSS" width="12">
-        TailwindCSS
-  </a>
-- <a href="https://ota-meshi.github.io/eslint-plugin-css/" target="_blank">
-     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="TailwindCSS" width="12">
-        CSS
-  </a>
-- <a href="https://eslint.nuxt.com/packages/plugin" target="_blank">
-     <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
-        Nuxt
-  </a>
-- <a href="https://vue-a11y.github.io/eslint-plugin-vuejs-accessibility" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        Accessibility
-  </a>
-- <a href="https://eslint-plugin-vue-i18n.intlify.dev/" target="_blank">
-     <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
-        I18n
-  </a>
 - <a href="https://ota-meshi.github.io/eslint-plugin-yml" target="_blank">
      <img src="https://yaml.org/favicon.svg" alt="Yaml" width="12">
         Yaml
@@ -115,9 +103,42 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://toml.io/favicon.png" alt="Toml" width="12">
         Toml
   </a>
+- <a href="https://github.com/francoismassart/eslint-plugin-tailwindcss" target="_blank">
+     <img src="https://tailwindcss.com/favicons/favicon-16x16.png" alt="TailwindCSS" width="12">
+        TailwindCSS<span style="color:red;">*</span>
+  </a>
+- <a href="https://eslint.vuejs.org" target="_blank">
+     <img src="https://vuejs.org/logo.svg" alt="Vue" width="12">
+        Vue<span style="color:red;">*</span>
+  </a>
+- <a href="https://vue-a11y.github.io/eslint-plugin-vuejs-accessibility" target="_blank">
+     <img src="https://vuejs.org/logo.svg" alt="Eslint" width="12">
+        vue-a11y<span style="color:red;">*</span>
+  </a>
+- <a href="https://eslint-plugin-vue-i18n.intlify.dev/" target="_blank">
+     <img src="https://vuejs.org/logo.svg" alt="Eslint" width="12">
+        vue-i18n<span style="color:red;">*</span>
+  </a>
+- <a href="https://eslint.nuxt.com/packages/plugin" target="_blank">
+     <img src="https://nuxt.com/icon.png" alt="Nuxt" width="12">
+        Nuxt<span style="color:red;">*</span>
+  </a>
+- <a href="https://github.com/Rel1cx/eslint-react" target="_blank">
+     <img src="https://react.dev/favicon.ico" alt="Nuxt" width="12">
+        React<span style="color:red;">*</span>
+  </a>
+- <a href="https://github.com/edvardchen/eslint-plugin-i18next" target="_blank">
+     <img src="https://react.dev/favicon.ico" alt="Nuxt" width="12">
+        React-i18n<span style="color:red;">*</span>
+  </a>
+- <a href="https://nextjs.org/docs/app/api-reference/config/eslint" target="_blank">
+     <img src="https://nextjs.org/favicon.ico" alt="Nuxt" width="12">
+        Next<span style="color:red;">*</span>
+  </a>
 - And more...
+<p align="center" style="color:red;">*Not enabled by default</p>
 <h3 align="center">
-  <a href="https://eslint.rosa.dev.br">Click here to check all enabled rules</a>
+  <a href="https://eslint.rosa.dev.br">Click here to check all rules</a>
 </h3>
 
 ## 🚀 Setup
@@ -176,7 +197,9 @@ export default dethdkn()
   // Enable eslint for all supported languages
   "eslint.validate": [
     "javascript",
+    "javascriptreact",
     "typescript",
+    "typescriptreact",
     "vue",
     "html",
     "markdown",
@@ -187,26 +210,23 @@ export default dethdkn()
     "xml",
     "gql",
     "graphql",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ]
 }
 ```
 
 ## ⚙️ Options
 
-- `tailwind` and `nuxt` rules can be disabled:
+- `tailwind`, `vue`, `nuxt`, `vueI18n`, `react`, `next`, `reactI18n`, `i18n` rules can be enabled:
 ```js
 // eslint.config.mjs
 import dethdkn from '@dethdkn/eslint-config'
 
-export default dethdkn({tailwind: false, nuxt: false})
-```
-
-- `i18n` rules can be enabled:
-```js
-// eslint.config.mjs
-import dethdkn from '@dethdkn/eslint-config'
-
-export default dethdkn({i18n: true})
+export default dethdkn({ tailwind: true, vue: true, nuxt: true, vueI18n: true, react: true, next: true, reactI18n: true })
 ```
 
 ## 📝 License

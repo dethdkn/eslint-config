@@ -64,7 +64,7 @@ export default (nuxt: boolean): Linter.Config => ({
     'new-cap': ['error', { capIsNew: false, newIsCap: true, properties: true }],
     'no-alert': ['error'],
     'no-array-constructor': ['error'],
-    'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-delete-var': ['error'],
     'no-else-return': ['error'],
     'no-empty': ['error'],

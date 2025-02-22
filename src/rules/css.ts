@@ -17,6 +17,6 @@ export default {
     'css/color-hex-style': ['warn'],
     'css/no-number-trailing-zeros': ['warn'],
     'css/number-leading-zero': ['warn'],
-    'css/property-casing': ['warn', 'kebab-case'],
+    'css/property-casing': ['warn'],
   },
 } as Linter.Config

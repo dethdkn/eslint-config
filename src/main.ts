@@ -109,7 +109,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
       import('./rules/react-refresh.js'),
       import('./rules/react-a11y.js'),
     ])
-    lint.push(reactConfig.default, reactHooksConfig.default, reactRefreshConfig.default, reactA11y.default)
+    lint.push(reactConfig.default, reactHooksConfig.default, reactRefreshConfig.default(hasNext), reactA11y.default)
   }
 
   if(hasReactI18n){

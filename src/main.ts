@@ -35,7 +35,7 @@ import zod from './rules/zod.js'
  * export default dethdkn({ tailwind: true, nuxt: true, i18n: true })
  *
  */
-export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean }) => {
+export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean, eslintEslint?: boolean }) => {
   const hasTailwind = opts?.tailwind === true
   const hasVue = opts?.vue === true
   const hasNuxt = opts?.nuxt === true
@@ -43,6 +43,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
   const hasReact = opts?.react === true
   const hasNext = opts?.next === true
   const hasReactI18n = opts?.reactI18n === true
+  const hasEslintEslint = opts?.eslintEslint === true
 
   if(hasNuxt && !hasVue) throw new Error('Nuxt requires Vue')
   if(hasVueI18n && !hasVue) throw new Error('Vue i18n requires Vue')
@@ -120,6 +121,11 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
   if(hasNext){
     const nextConfig = await import('./rules/next.js')
     lint.push(nextConfig.default)
+  }
+
+  if(hasEslintEslint){
+    const eslintEslintConfig = await import('./rules/eslint.js')
+    lint.push(eslintEslintConfig.default)
   }
 
   return lint

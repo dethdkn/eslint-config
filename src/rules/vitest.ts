@@ -4,7 +4,8 @@ import onlyTest from 'eslint-plugin-no-only-tests'
 
 export default {
   name: 'dethdkn/vitest/rules',
-  plugins: { 'only-test': onlyTest, vitest },
+  // eslint-disable-next-line typescript/no-explicit-any
+  plugins: { 'only-test': onlyTest, 'vitest': vitest as any },
   rules: {
     'only-test/no-only-tests': ['error'],
     'vitest/consistent-test-it': ['error', { fn: 'it', withinDescribe: 'it' }],

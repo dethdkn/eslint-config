@@ -95,7 +95,7 @@ export default (nuxt: boolean): Linter.Config[] => [
   },
   {
     name: 'dethdkn/unicorn/nuxt-camel-files/rules',
-    files: ['**/composables/**/*.ts', '**/utils/**/*.ts', '**/server/utils/**/*.ts'],
+    files: ['**/composables/**/*.ts', '**/utils/**/*.ts', '**/types/**/*.ts'],
     rules: {
       'unicorn/filename-case': [nuxt ? 'error' : 'off', { case: 'camelCase' }],
     },

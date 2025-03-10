@@ -55,6 +55,7 @@ export default {
     'react/dom/no-dangerously-set-innerhtml': ['error'],
     'react/dom/no-dangerously-set-innerhtml-with-children': ['error'],
     'react/dom/no-find-dom-node': ['error'],
+    'react/dom/no-flush-sync': ['error'],
     'react/dom/no-missing-button-type': ['error'],
     'react/dom/no-missing-iframe-sandbox': ['error'],
     'react/dom/no-namespace': ['error'],
@@ -77,6 +78,7 @@ export default {
     'react/hooks-extra/prefer-use-state-lazy-initialization': ['error'],
     // Naming Convention
     'react/naming-convention/component-name': ['error'],
+    'react/naming-convention/context-name': ['error'],
     'react/naming-convention/use-state': ['error'],
   },
 } as Linter.Config

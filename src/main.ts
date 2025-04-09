@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+import htmlParser from './parsers/html.js'
 import jsonParser from './parsers/json.js'
 import tomlParser from './parsers/toml.js'
 import typescriptParser from './parsers/typescript.js'
@@ -7,6 +8,7 @@ import antfu from './rules/antfu.js'
 import css from './rules/css.js'
 import drizzle from './rules/drizzle.js'
 import eslintComments from './rules/eslint-comments.js'
+import html from './rules/html.js'
 import ignores from './rules/ignores.js'
 import importx from './rules/importx.js'
 import javascript from './rules/javascript.js'
@@ -52,6 +54,8 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
 
   const lint: Linter.Config[] = [
     ignores,
+    htmlParser,
+    html,
     javascript(hasNuxt),
     node,
     importx,

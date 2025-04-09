@@ -202,6 +202,7 @@ export default dethdkn()
     "typescriptreact",
     "vue",
     "html",
+    "handlebars",
     "markdown",
     "json",
     "jsonc",
@@ -221,7 +222,7 @@ export default dethdkn()
 
 ## ⚙️ Options
 
-- `tailwind`, `vue`, `nuxt`, `vueI18n`, `react`, `next`, `reactI18n`, `i18n` rules can be enabled:
+- `tailwind`, `vue`, `nuxt`, `vueI18n`, `react`, `next`, `reactI18n` rules can be enabled:
 ```js
 // eslint.config.mjs
 import dethdkn from '@dethdkn/eslint-config'

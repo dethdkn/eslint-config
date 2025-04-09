@@ -19,6 +19,10 @@
 ## 📦 About This Package
 This is my opinionated `eslint-config`, heavily inspired by <a href="https://github.com/antfu/eslint-config">Antfu's config</a>. This setup is a combination of the following rules:
 
+- <a href="https://html-eslint.org" target="_blank">
+     <img src="https://html-eslint.org/logo_32x32.716351c9.png" alt="HTML" width="12">
+        HTML (hbs)
+  </a>
 - <a href="https://eslint.org/docs/latest/rules" target="_blank">
      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" width="12">
         Javascript

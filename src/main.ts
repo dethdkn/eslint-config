@@ -37,7 +37,7 @@ import zod from './rules/zod.js'
  * export default dethdkn({ tailwind: true, nuxt: true, i18n: true })
  *
  */
-export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean, eslintEslint?: boolean }) => {
+export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean, eslintEslint?: boolean, autoImports?: boolean }) => {
   const hasTailwind = opts?.tailwind === true
   const hasVue = opts?.vue === true
   const hasNuxt = opts?.nuxt === true
@@ -46,6 +46,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
   const hasNext = opts?.next === true
   const hasReactI18n = opts?.reactI18n === true
   const hasEslintEslint = opts?.eslintEslint === true
+  const hasAutoImports = (opts?.autoImports === true) || hasNuxt
 
   if(hasNuxt && !hasVue) throw new Error('Nuxt requires Vue')
   if(hasVueI18n && !hasVue) throw new Error('Vue i18n requires Vue')
@@ -56,7 +57,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
     ignores,
     htmlParser,
     html,
-    javascript(hasNuxt),
+    javascript({ autoImports: hasAutoImports, nuxt: hasNuxt }),
     node,
     importx,
     unusedImports,

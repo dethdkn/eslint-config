@@ -226,12 +226,12 @@ export default dethdkn()
 
 ## ⚙️ Options
 
-- `tailwind`, `vue`, `nuxt`, `vueI18n`, `react`, `next`, `reactI18n` rules can be enabled:
+- `tailwind`, `vue`, `nuxt`, `vueI18n`, `react`, `next`, `reactI18n`, `autoImports` rules can be enabled:
 ```js
 // eslint.config.mjs
 import dethdkn from '@dethdkn/eslint-config'
 
-export default dethdkn({ tailwind: true, vue: true, nuxt: true, vueI18n: true, react: true, next: true, reactI18n: true })
+export default dethdkn({ tailwind: true, vue: true, nuxt: true, vueI18n: true, react: true, next: true, reactI18n: true, autoImports: true })
 ```
 
 ## 📝 License

@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint'
 
-export default (nuxt: boolean): Linter.Config => ({
+export default ({ autoImports, nuxt }: { autoImports: boolean, nuxt: boolean }): Linter.Config => ({
   name: 'dethdkn/javascript/rules',
   rules: {
     // Possible Problems
@@ -42,7 +42,7 @@ export default (nuxt: boolean): Linter.Config => ({
     'no-sparse-arrays': ['error'],
     'no-template-curly-in-string': ['error'],
     'no-this-before-super': ['error'],
-    'no-undef': [nuxt ? 'off' : 'error'],
+    'no-undef': [autoImports ? 'off' : 'error'],
     'no-unexpected-multiline': ['error'],
     'no-unmodified-loop-condition': ['error'],
     'no-unreachable': ['error'],

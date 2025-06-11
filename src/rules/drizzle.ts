@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+// @ts-ignore no types support for drizzle plugin
 import drizzle from 'eslint-plugin-drizzle'
 
 export default {

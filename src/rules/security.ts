@@ -3,7 +3,7 @@ import security from 'eslint-plugin-security'
 
 export default {
   name: 'dethdkn/security/rules',
-  plugins: { security },
+  plugins: { security } as { security: unknown },
   rules: {
     'security/detect-bidi-characters': ['warn'],
     'security/detect-buffer-noassert': ['warn'],

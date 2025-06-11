@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+// @ts-ignore no types support for eslint-plugin-promise
 import promise from 'eslint-plugin-promise'
 
 export default {

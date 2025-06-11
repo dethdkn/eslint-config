@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+// @ts-ignore no types support for eslint-plugin-eslint-plugin
 import eslint from 'eslint-plugin-eslint-plugin'
 
 export default {

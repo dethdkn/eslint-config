@@ -1,4 +1,5 @@
 import type { Linter } from 'eslint'
+// @ts-ignore no types support for eslint-comments plugin
 import eslintComments from '@eslint-community/eslint-plugin-eslint-comments'
 
 export default {

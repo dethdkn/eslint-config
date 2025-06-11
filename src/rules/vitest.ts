@@ -1,5 +1,6 @@
 import type { Linter } from 'eslint'
 import vitest from '@vitest/eslint-plugin'
+// @ts-ignore no types support for no-only-tests plugin
 import onlyTest from 'eslint-plugin-no-only-tests'
 
 export default {

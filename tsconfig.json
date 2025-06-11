@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "strict": true,
     "strictNullChecks": true,
-    "declaration": true,
-    "emitDeclarationOnly": false,
-    "outDir": "dist",
-    "sourceMap": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "eslint.config.mjs"]
+  }
 }

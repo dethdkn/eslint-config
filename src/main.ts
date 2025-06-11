@@ -34,7 +34,7 @@ import zod from './rules/zod.js'
  *
  * @example
  * // eslint.config.mjs
- * export default dethdkn({ tailwind: true, nuxt: true, i18n: true })
+ * export default dethdkn({ tailwind: true, vue:true, nuxt: true })
  *
  */
 export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean, eslintEslint?: boolean, autoImports?: boolean }) => {

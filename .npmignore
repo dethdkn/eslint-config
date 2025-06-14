@@ -2,5 +2,7 @@
 src/
 test/
 eslint.config.mjs
+build.config.mts
+bump.config.mts
 tsconfig.json
 .eslint-config-inspector/

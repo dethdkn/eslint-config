@@ -6,6 +6,7 @@ import typescriptParser from './parsers/typescript'
 import yamlParser from './parsers/yaml'
 import antfu from './rules/antfu'
 import css from './rules/css'
+import dethdkn from './rules/dethdkn'
 import drizzle from './rules/drizzle'
 import eslintComments from './rules/eslint-comments'
 import html from './rules/html'
@@ -68,6 +69,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
     eslintComments,
     jsdoc,
     antfu,
+    dethdkn,
     drizzle,
     zod,
     typescriptParser,

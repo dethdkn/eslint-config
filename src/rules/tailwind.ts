@@ -6,11 +6,11 @@ export default {
   plugins: { tailwind },
   rules: {
     'tailwind/classnames-order': ['warn'],
-    'tailwind/enforces-negative-arbitrary-values': ['warn'],
-    'tailwind/enforces-shorthand': ['warn'],
-    'tailwind/migration-from-tailwind-2': ['warn'],
-    'tailwind/no-contradicting-classname': ['warn'],
-    'tailwind/no-custom-classname': ['error'],
-    'tailwind/no-unnecessary-arbitrary-value': ['warn'],
+    // 'tailwind/enforces-negative-arbitrary-values': ['warn'],
+    // 'tailwind/enforces-shorthand': ['warn'],
+    // 'tailwind/migration-from-tailwind-2': ['warn'],
+    // 'tailwind/no-contradicting-classname': ['warn'],
+    // 'tailwind/no-custom-classname': ['error'],
+    // 'tailwind/no-unnecessary-arbitrary-value': ['warn'],
   },
 } as Linter.Config

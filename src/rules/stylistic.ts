@@ -46,7 +46,7 @@ export default {
     'stylistic/operator-linebreak': ['error', 'none'],
     'stylistic/padded-blocks': ['error', 'never'],
     'stylistic/quote-props': ['error', 'consistent-as-needed'],
-    'stylistic/quotes': ['error', 'single', { allowTemplateLiterals: true, avoidEscape: false }],
+    'stylistic/quotes': ['error', 'single', { allowTemplateLiterals: 'always', avoidEscape: false }],
     'stylistic/rest-spread-spacing': ['error', 'never'],
     'stylistic/semi': ['error', 'never'],
     'stylistic/semi-spacing': ['error', { before: false, after: true }],

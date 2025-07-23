@@ -60,7 +60,7 @@ export default ({ autoImports, nuxt }: { autoImports: boolean, nuxt: boolean }):
     'default-case-last': ['error'],
     'dot-notation': ['error'],
     'eqeqeq': ['error'],
-    'func-style': ['error', 'declaration'],
+    'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     'new-cap': ['error', { capIsNew: false, newIsCap: true, properties: true }],
     'no-alert': ['error'],
     'no-array-constructor': ['error'],

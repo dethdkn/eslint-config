@@ -11,7 +11,7 @@ export default (nuxt: boolean): Linter.Config[] => [
       'unicorn/consistent-date-clone': ['error'],
       'unicorn/consistent-destructuring': ['error'],
       'unicorn/consistent-existence-index-check': ['error'],
-      'unicorn/consistent-function-scoping': ['error'],
+      'unicorn/consistent-function-scoping': ['error', { checkArrowFunctions: false }],
       'unicorn/empty-brace-spaces': ['error'],
       'unicorn/error-message': ['error'],
       'unicorn/escape-case': ['error'],

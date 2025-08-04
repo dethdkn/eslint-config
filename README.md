@@ -64,7 +64,7 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
         Drizzle
   </a>
 - <a href="https://github.com/gajus/eslint-plugin-zod" target="_blank">
-     <img src="https://zod.dev/static/favicon.ico" alt="Drizzle" width="12">
+     <img src="https://zod.dev/icon.png" alt="Zod" width="12">
         Zod
   </a>
 - <a href="https://typescript-eslint.io/rules" target="_blank">

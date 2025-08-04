@@ -1,10 +1,9 @@
 import type { Linter } from 'eslint'
-// @ts-ignore no types support for next plugin
 import next from '@next/eslint-plugin-next'
 
 export default {
   name: 'dethdkn/next/rules',
-  plugins: { next },
+  plugins: { next } as { next: unknown },
   rules: {
     'next/google-font-display': ['error'],
     'next/google-font-preconnect': ['error'],

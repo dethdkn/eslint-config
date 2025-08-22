@@ -94,12 +94,13 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
   }
 
   if(hasVue){
-    const [vueParser, vueConfig, vueA11yConfig] = await Promise.all([
+    const [vueParser, vueConfig, vueA11yConfig, harlanzwConfig] = await Promise.all([
       import('./parsers/vue.js'),
       import('./rules/vue.js'),
       import('./rules/vue-a11y.js'),
+      import('./rules/harlanzw.js'),
     ])
-    lint.push(vueParser.default, vueConfig.default(hasTailwind, hasNuxt, hasVueI18n), vueA11yConfig.default)
+    lint.push(vueParser.default, vueConfig.default(hasTailwind, hasNuxt, hasVueI18n), vueA11yConfig.default, harlanzwConfig.default)
   }
 
   if(hasVueI18n){

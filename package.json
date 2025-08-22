@@ -39,9 +39,7 @@
   "main": "./dist/main.mjs",
   "module": "./dist/main.mjs",
   "types": "./dist/main.d.mts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "obuild",
     "test": "vitest run",

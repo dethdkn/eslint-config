@@ -9,6 +9,7 @@ export default {
     'html/no-duplicate-attrs': ['error'],
     'html/no-duplicate-class': ['error'],
     'html/no-duplicate-id': ['error'],
+    'html/no-ineffective-attrs': ['error'],
     'html/no-extra-spacing-text': ['error'],
     'html/no-nested-interactive': ['error'],
     'html/no-obsolete-tags': ['error'],

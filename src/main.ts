@@ -1,11 +1,13 @@
 import type { Linter } from 'eslint'
 import htmlParser from './parsers/html'
 import jsonParser from './parsers/json'
+import svgoParser from './parsers/svgo'
 import tomlParser from './parsers/toml'
 import typescriptParser from './parsers/typescript'
 import yamlParser from './parsers/yaml'
 import antfu from './rules/antfu'
 import css from './rules/css'
+import deMorgan from './rules/de-morgan'
 import dethdkn from './rules/dethdkn'
 import drizzle from './rules/drizzle'
 import eslintComments from './rules/eslint-comments'
@@ -16,12 +18,15 @@ import javascript from './rules/javascript'
 import jsdoc from './rules/jsdoc'
 import json from './rules/json'
 import node from './rules/node'
+import ntnyq from './rules/ntnyq'
 import perfectionist from './rules/perfectionist'
 import progress from './rules/progress'
 import promise from './rules/promise'
 import regexp from './rules/regexp'
 import security from './rules/security'
 import stylistic from './rules/stylistic'
+import svgo from './rules/svgo'
+import sxzz from './rules/sxzz'
 import toml from './rules/toml'
 import typescript from './rules/typescript'
 import unicorn from './rules/unicorn'
@@ -39,16 +44,16 @@ import zod from './rules/zod'
  * export default dethdkn({ tailwind: true, vue:true, nuxt: true })
  *
  */
-export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean, eslintEslint?: boolean, autoImports?: boolean }) => {
-  const hasTailwind = opts?.tailwind === true
-  const hasVue = opts?.vue === true
-  const hasNuxt = opts?.nuxt === true
-  const hasVueI18n = opts?.vueI18n === true
-  const hasReact = opts?.react === true
-  const hasNext = opts?.next === true
-  const hasReactI18n = opts?.reactI18n === true
-  const hasEslintEslint = opts?.eslintEslint === true
-  const hasAutoImports = (opts?.autoImports === true) || hasNuxt
+export default async (plugins?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean, vueI18n?: boolean, react?: boolean, next?: boolean, reactI18n?: boolean, eslintEslint?: boolean, autoImports?: boolean }, opts?: { whiteListClasses?: string[], i18nIgnores?: string[], fullPackageJson?: boolean }) => {
+  const hasTailwind = plugins?.tailwind === true
+  const hasVue = plugins?.vue === true
+  const hasNuxt = plugins?.nuxt === true
+  const hasVueI18n = plugins?.vueI18n === true
+  const hasReact = plugins?.react === true
+  const hasNext = plugins?.next === true
+  const hasReactI18n = plugins?.reactI18n === true
+  const hasEslintEslint = plugins?.eslintEslint === true
+  const hasAutoImports = (plugins?.autoImports === true) || hasNuxt
 
   if(hasNuxt && !hasVue) throw new Error('Nuxt requires Vue')
   if(hasVueI18n && !hasVue) throw new Error('Vue i18n requires Vue')
@@ -66,10 +71,13 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
     unusedImports,
     promise,
     security,
+    deMorgan,
     eslintComments,
     jsdoc,
     antfu,
     dethdkn,
+    sxzz(opts?.fullPackageJson),
+    ntnyq,
     drizzle,
     zod,
     typescriptParser,
@@ -82,6 +90,8 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
     vitest,
     jsonParser,
     ...json,
+    svgoParser,
+    svgo,
     yamlParser,
     yaml,
     tomlParser,
@@ -90,7 +100,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
 
   if(hasTailwind){
     const tailwindConfig = await import('./rules/tailwind.js')
-    lint.push(tailwindConfig.default)
+    lint.push(tailwindConfig.default(opts?.whiteListClasses))
   }
 
   if(hasVue){
@@ -105,7 +115,7 @@ export default async (opts?: { tailwind?: boolean, vue?: boolean, nuxt?: boolean
 
   if(hasVueI18n){
     const vueI18nConfig = await import('./rules/vue-i18n.js')
-    lint.push(vueI18nConfig.default)
+    lint.push(vueI18nConfig.default(opts?.i18nIgnores))
   }
 
   if(hasNuxt){

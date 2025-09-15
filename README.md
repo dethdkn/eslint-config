@@ -47,6 +47,10 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Security
   </a>
+- <a href="https://github.com/azat-io/eslint-plugin-de-morgan" target="_blank">
+     <img src="https://raw.githubusercontent.com/azat-io/eslint-plugin-de-morgan/main/assets/logo.svg" alt="De Morgan" width="12">
+        De Morgan
+  </a>
 - <a href="https://mysticatea.github.io/eslint-plugin-eslint-comments" target="_blank">
      <img src="https://eslint.org/favicon.ico" alt="Eslint" width="12">
         Eslint Comments
@@ -98,6 +102,10 @@ This is my opinionated `eslint-config`, heavily inspired by <a href="https://git
 - <a href="https://ota-meshi.github.io/eslint-plugin-jsonc" target="_blank">
      <img src="https://www.json.org/favicon.png" alt="Json" width="12">
         Json
+  </a>
+- <a href="https://github.com/ntnyq/eslint-plugin-svgo" target="_blank">
+     <img src="https://svgo.dev/img/favicon.ico" alt="SVGO" width="12">
+        SVGO
   </a>
 - <a href="https://ota-meshi.github.io/eslint-plugin-yml" target="_blank">
      <img src="https://yaml.org/favicon.svg" alt="Yaml" width="12">
@@ -231,7 +239,7 @@ export default dethdkn()
 // eslint.config.mjs
 import dethdkn from '@dethdkn/eslint-config'
 
-export default dethdkn({ tailwind: true, vue: true, nuxt: true, vueI18n: true, react: true, next: true, reactI18n: true, autoImports: true })
+export default dethdkn({ tailwind: true, vue: true, nuxt: true, vueI18n: true, react: true, next: true, reactI18n: true, autoImports: true }, {whiteListClasses: [], i18nIgnores: [], fullPackageJson: true})
 ```
 
 ## 📝 License

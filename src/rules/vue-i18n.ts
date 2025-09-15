@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint'
 import vueI18n from '@intlify/eslint-plugin-vue-i18n'
 
-export default {
+export default (ignores?: string[]) => ({
   name: 'dethdkn/vue-i18n/rules',
   plugins: { 'vue-i18n': vueI18n },
   rules: {
@@ -18,7 +18,7 @@ export default {
     'vue-i18n/key-format-style': ['error', 'snake_case'],
     'vue-i18n/no-duplicate-keys-in-locale': ['error'],
     'vue-i18n/no-missing-keys-in-other-locales': ['error'],
-    'vue-i18n/no-unused-keys': ['error', { extensions: ['.js', '.ts', '.vue'] }],
+    'vue-i18n/no-unused-keys': ['error', { extensions: ['.js', '.ts', '.vue'], ignores }],
     'vue-i18n/prefer-sfc-lang-attr': ['error'],
     'vue-i18n/prefer-linked-key-with-paren': ['error'],
     'vue-i18n/sfc-locale-attr': ['error'],
@@ -26,7 +26,7 @@ export default {
   settings: {
     'vue-i18n': {
       localeDir: ['./i18n/locales/*.json'],
-      messageSyntaxVersion: '^9.0.0',
+      messageSyntaxVersion: '^11.0.0',
     },
   },
-} as Linter.Config
+} as Linter.Config)

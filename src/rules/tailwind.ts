@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint'
 import tailwind from 'eslint-plugin-tailwindcss'
 
-export default {
+export default (_whitelist?: string[]) => ({
   name: 'dethdkn/tailwind/rules',
   plugins: { tailwind },
   rules: {
@@ -10,7 +10,7 @@ export default {
     // 'tailwind/enforces-shorthand': ['warn'],
     // 'tailwind/migration-from-tailwind-2': ['warn'],
     // 'tailwind/no-contradicting-classname': ['warn'],
-    // 'tailwind/no-custom-classname': ['error'],
+    // 'tailwind/no-custom-classname': ['error', { whitelist }],
     // 'tailwind/no-unnecessary-arbitrary-value': ['warn'],
   },
-} as Linter.Config
+} as Linter.Config)

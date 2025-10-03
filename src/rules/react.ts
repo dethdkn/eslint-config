@@ -50,7 +50,6 @@ export default {
     'react/prefer-shorthand-boolean': ['error'],
     'react/prefer-shorthand-fragment': ['error'],
     'react/use-jsx-vars': ['error'],
-    // DOM
     'react/dom/no-void-elements-with-children': ['error'],
     'react/dom/no-dangerously-set-innerhtml': ['error'],
     'react/dom/no-dangerously-set-innerhtml-with-children': ['error'],
@@ -64,19 +63,16 @@ export default {
     'react/dom/no-unknown-property': ['error'],
     'react/dom/no-unsafe-iframe-sandbox': ['error'],
     'react/dom/no-unsafe-target-blank': ['error'],
-    // Web API
     'react/web-api/no-leaked-event-listener': ['error'],
     'react/web-api/no-leaked-interval': ['error'],
     'react/web-api/no-leaked-resize-observer': ['error'],
     'react/web-api/no-leaked-timeout': ['error'],
-    // Hooks Extra
     'react/hooks-extra/no-unnecessary-use-callback': ['error'],
     'react/hooks-extra/no-unnecessary-use-memo': ['error'],
     'react/hooks-extra/no-useless-custom-hooks': ['error'],
     'react/hooks-extra/no-direct-set-state-in-use-effect': ['error'],
     'react/hooks-extra/no-direct-set-state-in-use-layout-effect': ['error'],
     'react/hooks-extra/prefer-use-state-lazy-initialization': ['error'],
-    // Naming Convention
     'react/naming-convention/component-name': ['error'],
     'react/naming-convention/context-name': ['error'],
     'react/naming-convention/use-state': ['error'],

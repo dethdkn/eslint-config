@@ -63,6 +63,8 @@ export default {
     '**/.nitro/**',
     'dist',
     '**/dist/**',
+    '.wrangler',
+    '**/.wrangler/**',
     'dist-electron',
     '**/dist-electron/**',
     '.serverless',

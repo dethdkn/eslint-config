@@ -8,7 +8,6 @@ import yamlParser from './parsers/yaml'
 import antfu from './rules/antfu'
 import css from './rules/css'
 import deMorgan from './rules/de-morgan'
-import dethdkn from './rules/dethdkn'
 import drizzle from './rules/drizzle'
 import eslintComments from './rules/eslint-comments'
 import html from './rules/html'
@@ -75,7 +74,6 @@ export default async (plugins?: { tailwind?: boolean, vue?: boolean, nuxt?: bool
     eslintComments,
     jsdoc,
     antfu,
-    dethdkn,
     sxzz(opts?.fullPackageJson),
     ntnyq,
     drizzle,

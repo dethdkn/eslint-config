@@ -65,6 +65,8 @@ export default {
     '**/dist/**',
     '.wrangler',
     '**/.wrangler/**',
+    '.sst',
+    '**/.sst/**',
     'dist-electron',
     '**/dist-electron/**',
     '.serverless',

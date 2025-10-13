@@ -48,7 +48,7 @@
     "lint": "obuild && eslint .",
     "lint:fix": "obuild && eslint . --fix",
     "lint:build": "obuild && npx @eslint/config-inspector build",
-    "release": "pnpm typecheck && obuild && bumpp && sudo npm publish"
+    "release": "bun typecheck && obuild && bumpp && sudo npm publish"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
